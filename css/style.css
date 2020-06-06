@@ -1,0 +1,89 @@
+/*Specifice Things For Buttons, Text, Images Ect.*/
+.themeplaypause {
+    background-color: transparent;
+    border-color: transparent;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+}
+.copyright {
+    color: darkgray;
+}
+.follow-me {
+  border-style: groove;
+  border-color: blueviolet;
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
+}
+.landscape {
+    width: 45%;
+    height: auto;
+}
+.links-out {
+    width: 50%;
+    height: auto;
+}
+
+/*Text Colours & Boarders*/
+.primary-title {
+    color: purple;
+}
+.secondary-title {
+    color: violet;
+}
+.info {
+    border: 3px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 50px;
+    color: rgb(165, 112, 218);
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: #333333;
+}
+.links {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.ats {
+    color: gold;
+}
+
+/*Bootstrap Overrides*/
+.container {
+    min-width:992px!important;
+    background-color: #222222;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%
+}
+.justify-content-center {
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.text-center {
+    text-align:center!important;
+}

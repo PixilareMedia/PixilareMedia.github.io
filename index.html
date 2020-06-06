@@ -1,10 +1,75 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- My Imports & Stuff -->
         <title>Pixilare Media</title>
+        <link rel="shortcut icon" href="assets/logos/site-logos/pixilaremedia.png">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/navigation.css">
+        <link rel="stylesheet" href="assets/css/top.css">
+        <script src="assets/javascript/back_to_top.js"></script>
     </head>
-    <body>
-		<h1>Hello World</h1>
-		<p>Were on github pages</p>
+    <body class="container">
+        <!-- Holds the back 2 top button & the sound button -->
+        <div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+        <!-- The main navigation for the site -->
+        <header class="row justify-content-center">
+            <div class="topnav">
+              <a href="index.html">Pixilare Media</a>
+              <a href="team.html">Team</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Games
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pm_dg_team.html">Team</a>
+                        <a href="pm_dg_minecraft.html">Minecraft</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Animation
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pm_da_team.html">Team</a>
+                        <a href="pm_da_fackkick.html">Face Kick</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Interactive
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="pm_di_team.html">Team</a>
+                        <a href="pm_di_bluesky.html">Blue Sky</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- The main content section for the site -->
+        <main class="col">
+            <div class="row justify-content-center">
+                <h1 class="primary-title">Pixilare Media</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col info text-center">
+                  <h2 class="secondary-title">About Us</h2>
+                  <p>Pixilare Media is a group of coders, animators, and influnicers that just want to have fun with what they are doing.</p>
+                </div>
+                <div class="col info text-center">
+                  <h2 class="secondary-title">Quick Links</h2>
+                  <a href="team.html">Team</a>
+                  <a href="pm_d_games.html">Games</a>
+                  <a href="pm_d_animation.html">Animation</a>
+                  <a href="pm_d_interactive.html">Interactive</a>
+                </div>
+            </div>
+        </main>
+        <!-- Has the copyright & other less important stuff -->
+        <footer class="row justify-content-center">
+            <p class="copyright"><a class="copyright" href="">Pixilare Media</a> &copy; 2016-2020</p>
+        </footer>
     </body>
 </html>
