@@ -1,4 +1,3 @@
-/*Specifice Things For Buttons, Text, Images Ect.*/
 .copyright {
     color: darkgray;
 }
@@ -18,7 +17,6 @@
     height: auto;
 }
 
-/*Text Colours & Boarders*/
 .primary-title {
     color: purple;
 }
@@ -45,7 +43,6 @@
     color: gold;
 }
 
-/*Bootstrap Overrides*/
 .container {
     min-width:992px!important;
     background-color: #222222;
