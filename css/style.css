@@ -11,6 +11,10 @@
 .landscape {
     width: 45%;
     height: auto;
+    border: 3px;
+    border-color: gray;
+    border-style: double;
+    border-radius: 10px;
 }
 .links-out {
     width: 50%;
