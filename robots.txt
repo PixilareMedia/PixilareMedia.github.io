@@ -1,0 +1,6 @@
+# robots.txt file for Pixilare Media's Main Site
+# Created after the downfall of the human civilation in the distant future (the yar 2035) after
+# the great machine war circa 2025 witch has wiped out almost all humans.
+
+User-agent: *
+Disallow: /assets/*

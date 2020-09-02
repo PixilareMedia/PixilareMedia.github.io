@@ -1,125 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Links - Pixilare Media</title>
-        <link rel="shortcut icon" href="../assets/logo/pixilaremedia.png">
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <link rel="stylesheet" href="../assets/css/navigation.css">
-        <link rel="stylesheet" href="../assets/css/top.css">
-        <script src="../assets/js/back_to_top.js"></script>
+        <link rel="shortcut icon" href="/assets/images/logo/pixilaremedia.png">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <script src="/assets/js/main.js"></script>
     </head>
     <body class="container">
-        <div>
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        </div>
         <header class="row justify-content-center">
+            <div>
+                <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+            </div>
             <div class="topnav">
-              <a href="../">Pixilare Media</a>
-              <a href="../team">Team</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Games
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="../divisions/games">About</a>
-                        <a href="../divisions/games/team">Team</a>
-                        <a href="../divisions/games/minecraft">Minecraft</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Animation
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="../divisions/animation">About</a>
-                        <a href="../divisions/animation/team">Team</a>
-                        <a href="../divisions/animation/facekick">Face Kick</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Interactive
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="../divisions/interactive">About</a>
-                        <a href="../divisions/interactive/team">Team</a>
-                        <a href="../divisions/interactive/bluesky">Blue Sky</a>
-                    </div>
-                </div>
-                <a href="../links">Links</a>
+              <a href="/">Home</a>
+              <div class="dropdown">
+                  <button class="dropbtn">Projects
+                      <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="/divisions/games">Games</a>
+                    <a href="/divisions/animation">Animation</a>
+                    <a href="/divisions/interactive">Interactive</a>
+                  </div>
+              </div>
+              <a href="/team">Team</a>
+              <a href="/links">Links</a>
             </div>
         </header>
         <main class="col">
             <div class="row justify-content-center">
-                <h1 class="primary-title">Pixilare Media</h1>
+                <h1 class="primary-title">Pixilare Media's Links</h1>
             </div>
-            <div class="row justify-content-center info">
-                <div class="row">
-                    <a class="col links" href="https://twitter.com/PixilareMedia" target="_blank">
-                        <div class="text-center">
-                            <h2 class="secondary-title">Twitter</h2>
-                            <img class="links-out" src="../assets/logo/twitter.png" alt="The Twitter Logo"/>
-                            <figcaption class="ats">@PixilareMedia</figcaption>
-                        </div>
+            <div class="row info justify-content-center">
+                <div class="row text-center">
+                    <div class="col text-center">
+                        <h2 class="secondary-title">YouTube</h2>
+                        <a class="external-links" href="https://www.youtube.com/channel/UClfBdQbrNONNys3xpfvnZ9w" target="_blank">
+                            <img class="image-links" src="/assets/images/logo/youtube.png" alt="The YouTube Logo"/>
+                        </a>
+                        <figcaption class="ats">@Pixilare Media</figcaption>
+                    </div>
+                    <div class="col text-center">
+                        <h2 class="secondary-title">Twitch</h2>
+                        <a class="external-links" href="https://www.twitch.tv/pixilaremedia" target="_blank">
+                            <img class="image-links" src="/assets/images/logo/twitch.png" alt="The Twitch Logo"/>
+                        </a>
+                        <figcaption class="ats">@PixilareMedia</figcaption>
+                    </div>
+                    <div class="col text-center">
+                        <h2 class="secondary-title">Twitter</h2>
+                        <a class="external-links" href="https://twitter.com/PixilareMedia" target="_blank">
+                            <img class="image-links" src="/assets/images/logo/twitter.png" alt="The Twitter Logo"/>
+                        </a>
+                        <figcaption class="ats">@PixilareMedia</figcaption>
+                    </div>
                     </a>
-                    <a class="col links" href="https://www.curseforge.com/members/pixilaremedia/projects" target="_blank">
-                        <div class="text-center">
-                            <h2 class="secondary-title">Curse Forge</h2>
-                            <img class="links-out" src="../assets/logo/curseforge.png" alt="The Curse Forge Logo"/>
-                            <figcaption class="ats">@PixilareMedia</figcaption>
-                        </div>
-                    </a>
-                    <a class="col links" href="https://www.instagram.com/pixilaremedia/" target="_blank">
-                        <div class="text-center">
-                            <h2 class="secondary-title">Instagram</h2>
-                            <img class="links-out" src="../assets/logo/instagram.png" alt="The Instagram Logo"/>
-                            <figcaption class="ats">@PixilareMedia</figcaption>
-                        </div>
-                    </a>
-                    <a class="col links" href="https://www.twitch.tv/pixilaremedia" target="_blank">
-                        <div class="text-center">
-                            <h2 class="secondary-title">Twitch</h2>
-                            <img class="links-out" src="../assets/logo/twitch.png" alt="The Twitch Logo"/>
-                            <figcaption class="ats">@PixilareMedia</figcaption>
-                        </div>
-                    </a>
+                    <div class="col text-center">
+                        <h2 class="secondary-title">Instagram</h2>
+                        <a class="external-links" href="https://www.instagram.com/pixilaremedia/" target="_blank">
+                            <img class="image-links" src="/assets/images/logo/instagram.png" alt="The Instagram Logo"/>
+                        </a>
+                        <figcaption class="ats">@PixilareMedia</figcaption>
+                    </div>
                 </div>
-                <div class="row">
-                    <a class="col links" href="https://www.youtube.com/channel/UClfBdQbrNONNys3xpfvnZ9w" target="_blank">
-                        <div class="text-center">
-                            <h2 class="secondary-title">YouTube</h2>
-                            <img class="links-out" src="../assets/logo/youtube.png" alt="The YouTube Logo"/>
-                            <figcaption class="ats">@Pixilare Media</figcaption>
-                        </div>
+                <div class="row text-center">
+                    <div class="col text-center">
+                        <h2 class="secondary-title">Discord</h2>
+                        <a class="external-links" href="https://discord.gg/5RXY344" target="_blank">
+                            <img class="image-links" src="/assets/images/logo/discord.png" alt="The Discord Logo"/>
+                        </a>
+                        <figcaption class="ats">@PixilareMedia</figcaption>
+                    </div>
+                    <div class="col text-center">
+                        <h2 class="secondary-title">Github</h2>
+                        <a class="external-links" href="https://github.com/PixilareMedia" target="_blank">
+                            <img class="image-links" src="/assets/images/logo/github.png" alt="The Github Logo"/>
+                        </a>
+                        <figcaption class="ats">@PixilareMedia</figcaption>
+                    </div>
+                    <div class="col text-center">
+                        <h2 class="secondary-title">Curse Forge</h2>
+                        <a class="external-links" href="https://www.curseforge.com/members/pixilaremedia/projects" target="_blank">
+                            <img class="image-links" src="/assets/images/logo/curseforge.png" alt="The Curse Forge Logo"/>
+                        </a>
+                        <figcaption class="ats">@PixilareMedia</figcaption>
+                    </div>
                     </a>
-                    <a class="col links" href="https://github.com/PixilareMedia" target="_blank">
-                        <div class="text-center">
-                            <h2 class="secondary-title">GitHub</h2>
-                            <img class="links-out" src="../assets/logo/github.png" alt="The GitHub Logo"/>
-                            <figcaption class="ats">@PixilareMedia</figcaption>
-                        </div>
-                    </a>
-                    <a class="col links" href="https://discord.gg/5RXY344" target="_blank">
-                        <div class="text-center">
-                            <h2 class="secondary-title">Discord</h2>
-                            <img class="links-out" src="../assets/logo/discord.png" alt="The Discord Logo"/>
-                            <figcaption class="ats">@PixilareMedia</figcaption>
-                        </div>
-                    </a>
-                    <a class="col links" href="https://www.patreon.com/PixilareMedia" target="_blank">
-                        <div class="text-center">
-                            <h2 class="secondary-title">Patreon</h2>
-                            <img class="links-out" src="../assets/logo/patreon.png" alt="The Patreon Logo"/>
-                            <figcaption class="ats">@PixilareMedia</figcaption>
-                        </div>
-                    </a>
+                    <div class="col text-center">
+                        <h2 class="secondary-title">Patreon</h2>
+                        <a class="external-links" href="https://www.patreon.com/PixilareMedia" target="_blank">
+                            <img class="image-links" src="/assets/images/logo/patreon.png" alt="The Patreon Logo"/>
+                        </a>
+                        <figcaption class="ats">@PixilareMedia</figcaption>
+                    </div>
                 </div>
             </div>
         </main>
-        <footer class="row justify-content-center">
+        <footer class="row justify-content-center text-center">
             <div>
-              <p class="copyright"><a class="copyright" href="https://www.pixilaremedia.com">Pixilare Media</a> &copy; 2016-2020</p>
-              <p class="copyright caption">Site Coded by <a class="copyright caption" href="https://william.pixilaremedia.com">William Roebuck</a></p>
+              <p class="copyright">&copy; 2016-<span id="currentYear">2016</span> <a class="copyright" href="https://www.pixilaremedia.com">Pixilare Media</a></p>
+              <p class="copyright caption">Page coded by <a class="copyright caption" href="https://www.twitter.com/Herobrain_gamer" target="_blank">William Roebuck</a></p>
             </div>
         </footer>
     </body>

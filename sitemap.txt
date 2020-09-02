@@ -1,0 +1,25 @@
+home
+|
+|--> divisions
+|    |
+|    |--> animation
+|    |    |
+|    |    |--> face-kick
+|    |
+|    |--> games
+|    |    |
+|    |    |--> decoration-block
+|    |    |--> hollow-pvp
+|    |    |--> neonian
+|    |    |--> pixel-core
+|    |    |--> pixel-ville
+|    |    |--> salmon-arm-community
+|    |    |--> team-pixelated
+|    |    |--> thrive-craft
+|    |
+|    |--> interactive
+|    |    |
+|    |    |--> blue-sky
+|
+|--> links
+|--> team
