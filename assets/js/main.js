@@ -1,5 +1,5 @@
 /*Setting the current year at the bottom of the page*/
-window.onload = function() {currnetYearFunction()};
+document.addEventListener("DOMContentLoaded", currentYear);
 
 function currnetYearFunction() {
     var y = new Date().getFullYear();
