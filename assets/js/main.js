@@ -1,7 +1,7 @@
 /*Setting the current year at the bottom of the page*/
 document.addEventListener("DOMContentLoaded", currentYear);
 
-function currnetYearFunction() {
+function currentYear() {
     var y = new Date().getFullYear();
     document.getElementById("currentYear").textContent = y;
 }
