@@ -1,0 +1,43 @@
+/*Hollow PvP's Styling*/
+.landscape {
+    width: 45%;
+    height: auto;
+    border: 3px;
+    border-color: gray;
+    border-style: double;
+    border-radius: 10px;
+}
+.downloads {
+    text-decoration: none;
+    color: lightgreen;
+}
+.external-links {
+    text-decoration: none;
+    font-size: larger;
+    color: aqua;
+}
+
+.infos {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    color: rgb(165, 112, 218);
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(51, 51, 51, 0.7);
+    text-decoration-line: none;
+}
+
+.hideshowBtn {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 153, 255, 0);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: large;
+}
+.hideshowBtn:hover {
+    background-color: #555;
+}

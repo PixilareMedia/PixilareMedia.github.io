@@ -1,0 +1,30 @@
+/*Pixel Ville's Styling*/
+.landscape {
+    width: 45%;
+    height: auto;
+    border: 3px;
+    border-color: gray;
+    border-style: double;
+    border-radius: 10px;
+}
+.downloads {
+    text-decoration: none;
+    color: lightgreen;
+}
+.external-links {
+    text-decoration: none;
+    font-size: larger;
+    color: aqua;
+}
+
+.hideshowBtn {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 153, 255, 0);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: large;
+  }
+  .hideshowBtn:hover {
+    background-color: #555;
+  }
