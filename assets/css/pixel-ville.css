@@ -11,10 +11,18 @@
     text-decoration: none;
     color: lightgreen;
 }
+.downloads:hover {
+    text-decoration: underline;
+    color: mediumseagreen;
+}
 .external-links {
     text-decoration: none;
     font-size: larger;
     color: aqua;
+}
+.external-links:hover {
+    text-decoration: underline;
+    color: rgb(72, 245, 245);
 }
 
 .hideshowBtn {
