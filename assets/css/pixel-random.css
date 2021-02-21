@@ -1,0 +1,47 @@
+/*Pixel Ville's Styling*/
+.landscape {
+    width: 45%;
+    height: auto;
+    border: 3px;
+    border-color: gray;
+    border-style: double;
+    border-radius: 10px;
+}
+.downloads {
+    text-decoration: none;
+    color: lightgreen;
+}
+.downloads:hover {
+    text-decoration: underline;
+    color: mediumseagreen;
+}
+.external-links {
+    text-decoration: none;
+    font-size: larger;
+    color: aqua;
+}
+.external-links:hover {
+    text-decoration: underline;
+    color: rgb(72, 245, 245);
+}
+.external-links-sm {
+    text-decoration: none;
+    font-size: medium;
+    color: aqua;
+}
+.external-links-sm:hover {
+    text-decoration: underline;
+    color: rgb(72, 245, 245);
+}
+
+.hideshowBtn {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 153, 255, 0);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: large;
+}
+.hideshowBtn:hover {
+    background-color: #555;
+}

@@ -3,6 +3,7 @@ home
 |--> projects
 |    |
 |    |--> hollow-pvp
+|    |--> pixel-random
 |    |--> pixel-ville
 |    |--> neonain
 |    |--> salmon-arm-community
