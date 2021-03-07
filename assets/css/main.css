@@ -1,53 +1,22 @@
-/*Main Page Styling*/
+.info {
+    color: white;
+    font-size: large;
+    padding: 10px;
+}
+.follow-us {
+    width: 35%;
+    height: auto;
+}
 .infos {
     border: 3px;
     border-color: lightslategray;
     border-style: inset;
     border-radius: 25px;
-    color: rgb(165, 112, 218);
     font-size: large;
     padding: 10px;
     margin: 5px;
-    background-color: rgba(51, 51, 51, 0.7);
-    text-decoration-line: none;
+    background-color: rgba(51, 51, 51, 0.5);
 }
-/*About*/
-.follow-us {
-    width: 35%;
-    height: auto;
-}
-/*Team*/
-.team-primary-job {
-    text-decoration: none;
-    color: gray;
-}
-.team-ats {
-    color: darkgray;
-    font-size: small;
-    text-decoration: none;
-}
-.team-ats:hover {
-    color: lightgray;
-    font-size: small;
-    text-decoration: underline;
-}
-.team-faces {
-    width: 25%;
-    height: auto;
-    border: 3px;
-    border-color: lightskyblue;
-    border-style: groove;
-    border-radius: 15px;
-}
-/*Links*/
-.image-links {
-    width: 25%;
-    height: auto;
-}
-.external-links {
-    text-decoration: none;
-    color: aqua;
-}
-.ats {
-    color: gold;
+.space-bottom {
+    padding-bottom: 22.9em;
 }

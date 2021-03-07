@@ -1,5 +1,7 @@
 home
 |
+|--> links
+|--> team
 |--> projects
 |    |
 |    |--> hollow-pvp

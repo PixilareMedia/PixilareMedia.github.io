@@ -1,6 +1,51 @@
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.info {
+    color: white;
+    font-size: large;
+    padding: 10px;
+}
+.infos {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+.versions {
+    color: violet;
+    font-family: 'Segoe Script';
+}
+.small-font {
+    font-size: medium;
+}
+.space-bottom {
+    padding-bottom: 4em;
+}
+
 /*Pixel Ville's Styling*/
 .landscape {
-    width: 45%;
+    width: 25%;
     height: auto;
     border: 3px;
     border-color: gray;
@@ -8,31 +53,45 @@
     border-radius: 10px;
 }
 .downloads {
-    text-decoration: none;
     color: lightgreen;
 }
 .downloads:hover {
-    text-decoration: underline;
-    color: mediumseagreen;
+    color: rgb(127, 90, 207);
 }
 .external-links {
-    text-decoration: none;
     font-size: larger;
     color: aqua;
 }
 .external-links:hover {
-    text-decoration: underline;
-    color: rgb(72, 245, 245);
+    color: rgb(127, 90, 207);
+}
+
+.two-toggle {
+    border: 3px;
+    border-color: gray;
+    border-style: groove;
+    outline: none;
+    background-color: rgba(0, 153, 255, 0);
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family: 'Segoe Script';
+}
+.two-toggle:hover {
+    background-color: #555;
 }
 
 .hideshowBtn {
-    border: none;
+    border: 3px;
+    border-color: gray;
+    border-style: groove;
     outline: none;
     background-color: rgba(0, 153, 255, 0);
     cursor: pointer;
     border-radius: 10px;
     font-size: large;
-  }
-  .hideshowBtn:hover {
+}
+.hideshowBtn:hover {
     background-color: #555;
-  }
+}

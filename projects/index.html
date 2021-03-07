@@ -2,37 +2,56 @@
 <html lang="en-ca">
     <head>
         <meta charset="UTF-8">
-        <meta name="keywords" content="Pixilare Media, 404">
-        <meta name="description" content="Sorry the page you have requested is not avaiable or is not accessable by you.">
-        <meta name="author" content="William (Herobrain_gamer)">
-        <title>404 - Pixilare Media</title>
+        <title>Pixilare Media - Projects</title>
         <link rel="shortcut icon" href="/assets/images/logos/pixilaremedia.png">
         <link rel="stylesheet" href="/assets/css/global.css">
         <link rel="stylesheet" href="/assets/css/navigation.css">
         <link rel="stylesheet" href="/assets/css/top.css">
-        <link rel="stylesheet" href="/assets/css/404.css">
+        <link rel="stylesheet" href="/assets/css/projects.css">
         <script src="/assets/js/global.js"></script>
     </head>
     <body class="container">
-        <header class="row">
-            <div class="topnav">
-                <a href="/">Home</a>
-                <a href="/#projects">Projects</a>
-                <a href="/#team">Team</a>
-                <a href="/#links">Links</a>
+        <div include-html="/assets/html/top.html"></div>
+        <div include-html="/assets/html/nav.html" class="nav"></div>
+        <div class="content justify-content-center text-center">
+            <div class="justify-content-center text-center info space-bottom">
+                <h2 class="secondary-title" id="projects">Pixilare Media's Projects</h2>
+                <div class="row justify-content-center">
+                    <div class="projects">
+                        <a href="https://pixelseries.pixilaremedia.com" target="_blank">
+                            <img src="/assets/images/projects/pixel-series/poster.png" alt="The Pixel Series Poster"/>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <a href="/projects/pixel-random">
+                            <img src="/assets/images/projects/pixel-random/poster.png" alt="The Pixel Random Poster"/>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <a href="/projects/pixel-ville">
+                            <img src="/assets/images/projects/pixel-ville/poster.png" alt="The Pixel Ville Poster"/>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <a href="/projects/hollow-pvp">
+                            <img src="/assets/images/projects/hollow-pvp/poster.png" alt="The Hollow PvP Poster"/>
+                        </a>
+                    </div>
+                </div>
+                <!--<div class="row justify-content-center">
+                    <div class="projects">
+                        <a href="/projects/neonian">
+                            <img src="/assets/images/projects/neonian/poster.png" alt="The Neonian Poster"/>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <a href="/projects/salmon-arm-community">
+                            <img src="/assets/images/projects/salmon-arm-community/poster.png" alt="The Salmon Arm Community Poster"/>
+                        </a>
+                    </div>
+                </div>-->
             </div>
-        </header>
-        <main class="col">
-            <div class="col justify-content-center text-center">
-                <h1 class="p-title">404</h1>
-                <h2 class="s-title">Page Not Found</h2>
-            </div>
-        </main>
-        <footer class="row justify-content-center text-center">
-            <div>
-                <p class="copyright">&copy; 2016-<span id="currentYear">2016</span> <a class="copyrighted" href="https://www.pixilaremedia.com">Pixilare Media</a></p>
-                <p class="copyright-sm">Page coded by <a class="copyrighted" href="https://www.twitter.com/Herobrain_gamer" target="_blank">William</a></p>
-            </div>
-        </footer>
+            <div include-html="/assets/html/footer.html" class="footer-info text-center"></div>
+        </div>
     </body>
 </html>

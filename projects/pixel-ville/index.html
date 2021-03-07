@@ -2,10 +2,7 @@
 <html lang="en-ca">
     <head>
         <meta charset="UTF-8">
-        <meta name="keywords" content="Pixilare Media, Pixel Ville, Minecraft, Modpack">
-        <meta name="description" content="The main page for Pixilare Media's Pixel Ville project where you can play in a world and become a grand mayor.">
-        <meta name="author" content="William (Herobrain_gamer)">
-        <title>Pixel Ville - Projects - Pixilare Media</title>
+        <title>Pixilare Media - Pixel Ville</title>
         <link rel="shortcut icon" href="/assets/images/logos/pixilaremedia.png">
         <link rel="stylesheet" href="/assets/css/global.css">
         <link rel="stylesheet" href="/assets/css/navigation.css">
@@ -16,186 +13,192 @@
         <script src="/assets/js/pixel-ville.js"></script>
     </head>
     <body class="container">
-        <header class="row">
-            <div>
-                <button onclick="topScroll()" id="topBtn" title="Go to top">Top</button>
-            </div>
-            <div class="topnav">
-                <a href="/">Home</a>
-                <a href="/#projects">Projects</a>
-                <a href="/#team">Team</a>
-                <a href="/#links">Links</a>
-            </div>
-        </header>
-        <main class="col">
-            <div class="row justify-content-center">
-                <h1 class="primary-title">Pixel Ville Modpack</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col info text-center">
-                    <h2 class="secondary-title">About</h2>
-                    <p>Pixel Ville is a very basic modpack that we made to play in the Pixel Modded series.</p>
-                    <p>If you donwload it from here you need to install it in the Curse app with a custom profile.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
+        <div include-html="/assets/html/top.html"></div>
+        <div include-html="/assets/html/nav.html" class="nav"></div>
+        <div class="content justify-content-center text-center">
+            <div class="justify-content-center text-center info space-bottom">
                 <div class="col">
-                    <div class="col info text-center">
+                    <div class="row justify-content-center">
+                        <h1 class="primary-title">Pixel Ville Modpack</h1>
+                    </div>
+                    <div class="col infos justify-content-center text-center">
+                        <h2 class="secondary-title">About</h2>
+                        <p>Become the mayor of your very own village or city.</p>
+                        <p>The main premise is to get a working and successful city and to have a keen eye for design</p>
+                        <p>Store your personal items in a ME system create power to have it function</p>
+                        <p>Use the replay mod to show off your building skills</p>
+                        <p>Create a custom story-driven world with your friends</p>
+                        <p>And much more to come. . .</p>
+                        <p><a class="external-links" href="https://www.curseforge.com/minecraft/modpacks/pixel-ville" target="_blank">Download from CurseForge</a></p>
+                        <p>If you donwload it from here you need to install it in the Curse app with a custom profile.</p>
+                    </div>
+                    <div class="col infos justify-content-center text-center">
                         <h2 class="secondary-title">Screenshots</h2>
                         <img class="landscape" src="/assets/images/projects/pixel-ville/landscape1.png" alt="An image of the landscape of Pixel Ville"/>
                         <img class="landscape" src="/assets/images/projects/pixel-ville/landscape2.png" alt="An image of the landscape of Pixel Ville"/>
                         <img class="landscape" src="/assets/images/projects/pixel-ville/village1.png" alt="An image of a village of Pixel Ville"/>
                     </div>
-                    <div class="col info text-center">
-                        <h2 class="secondary-title">Downloads</h2>
-                        <p><a class="external-links" href="https://www.curseforge.com/minecraft/modpacks/pixel-ville" target="_blank">Curse Forge</a></p>
-                        <button onclick="pvbdlf()" class="hideshowBtn tertiary-title" title="Show/Hide Pixel Ville Beta Downloads">Beta</button>
-                        <div class="col text-center" id="pvbdlw">
-                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.6.zip">Beta 0.6</a></p>
-                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.5.zip">Beta 0.5</a></p>
-                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.4.zip">Beta 0.4</a></p>
-                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.3.zip">Beta 0.3</a></p>
-                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.2.zip">Beta 0.2</a></p>
-                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.1.zip">Beta 0.1</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col info text-center">
-                        <h2 class="secondary-title">Mod List</h2>
-                        <div class="row justify-content-center">
-                            <div class="infos">
-                                <p>Actually Additions</p>
-                                <p>AE2 Stuff</p>
-                                <p>AE2 Wireless Fluid Terminal</p>
-                                <p>AE2 Wireless Interface Terminal</p>
-                                <p>AE2 Wireless Terminal Library</p>
-                                <p>Applied Energistics 2</p>
-                                <p>ArchitectureCraft - TridentMC Version</p>
-                                <p>AutoRegLib</p>
-                                <p>Backpacks</p>
-                                <p>Baubles</p>
-                                <p>Baubley Heart Canisters</p>
-                                <p>BdLib</p>
-                                <p>Bedrock B Gone</p>
-                                <p>Better Advancements</p>
-                                <p>Better Builder's Wands</p>
-                                <p>BetterFps</p>
-                                <p>BetterPortals</p>
-                                <p>BiblioCraft</p>
-                                <p>Chance Cubes</p>
-                                <p>Chisel</p>
-                                <p>Chisels & Bits</p>
-                                <p>CodeChicken Lib 1.8+</p>
-                                <p>Colytra</p>
-                                <p>ConnectedTexturesMod</p>
-                                <p>Construct's Armory</p>
-                                <p>Cosmetic Armor Reworked</p>
-                                <p>CraftPresence</p>
-                                <p>CraftTweaker</p>
-                                <p>CreativeCore</p>
-                                <p>Custom Main Menu</p>
-                                <p>Custom NPCs</p>
-                                <p>Cyclops Core</p>
-                                <p>DeathQuotes / Death Quotes</p>
-                                <p>Decocraft</p>
-                                <p>Ender Storage 1.8+</p>
-                                <p>EverlastingAbilities</p>
-                                <p>Ex Nihilo: Creatio</p>
-                                <p>Extra Utilities</p>
-                                <p>ExtraCells2</p>
+                    <div class="row justify-content-center">
+                        <div class="col text-center">
+                            <div class="row justify-content-center text-center">
+                                <div class="col"></div>
+                                <div class="col infos">
+                                    <button class="two-toggle" onclick="pvdownloadsf()">Donwloads</button>
+                                </div>
+                                <div class="col infos">
+                                    <button class="two-toggle" onclick="pvmodlistf()">ModList</button>
+                                </div>
+                                <div class="col"></div>
                             </div>
-                            <div class="infos">
-                                <p>Fast Leaf Decay</p>
-                                <p>Fence Jumper</p>
-                                <p>Flux Networks</p>
-                                <p>Foamflower</p>
-                                <p>FTB Backups</p>
-                                <p>FTB Library</p>
-                                <p>FTB Utilities</p>
-                                <p>Googly Eyes</p>
-                                <p>Hat Stand</p>
-                                <p>Hats</p>
-                                <p>Headcrumbs</p>
-                                <p>Hwyla</p>
-                                <p>iChunUtil</p>
-                                <p>In-Game Account Switcher</p>
-                                <p>InGame Info XML</p>
-                                <p>Inventory Tweaks</p>
-                                <p>Iron Chests</p>
-                                <p>ItemPhysic Full</p>
-                                <p>JourneyMap</p>
-                                <p>Just Enough Energistics (JEE)</p>
-                                <p>Just Enough Items (JEI)</p>
-                                <p>Just Enough Resources (JER)</p>
-                                <p>LunatriusCore</p>
-                                <p>MalisisBlocks</p>
-                                <p>MalisisCore</p>
-                                <p>MalisisDoors</p>
-                                <p>Mantle</p>
-                                <p>Materialis</p>
-                                <p>Mine Tweaker RecipeMaker</p>
-                                <p>Moar Tinkers</p>
-                                <p>Mob Grinding Utils</p>
-                                <p>More Overlays</p>
-                                <p>More Player Models</p>
-                                <p>Morpheus</p>
-                                <p>Mouse Tweaks</p>
-                                <p>MrCrayfish's Furniture Mod</p>
-                                <p>MrCrayfish's Gun Mod</p>
-                                <p>MrCrayfish's Jumping Castle Mod</p>
-                                <p>MrCrayfish's Vehicle Mod</p>
+                            <div class="row justify-content-center" id="pvdownloadsw">
+                                <div class="row justify-content-center">
+                                    <div class="col"></div>
+                                    <div class="col infos">
+                                        <p><a class="external-links" href="https://www.curseforge.com/minecraft/modpacks/pixel-ville" target="_blank">CurseForge</a></p>
+                                        <button onclick="pvbdlf()" class="hideshowBtn versions" title="Show/Hide Pixel Ville Beta Downloads">Beta</button>
+                                        <div class="col text-center infos" id="pvbdlw">
+                                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.6.zip">Beta 0.6</a></p>
+                                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.5.zip">Beta 0.5</a></p>
+                                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.4.zip">Beta 0.4</a></p>
+                                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.3.zip">Beta 0.3</a></p>
+                                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.2.zip">Beta 0.2</a></p>
+                                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.1.zip">Beta 0.1</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="col"></div>
+                                </div>
                             </div>
-                            <div class="infos">
-                                <p>Natura</p>
-                                <p>Neat</p>
-                                <p>Obfuscate</p>
-                                <p>OnlinePictureFrame</p>
-                                <p>OpenBlocks</p>
-                                <p>OpenModsLib</p>
-                                <p>Ore Excavation</p>
-                                <p>p455w0rd's Library</p>
-                                <p>Pam's HarvestCraft</p>
-                                <p>Placebo</p>
-                                <p>PTRLib</p>
-                                <p>Quark</p>
-                                <p>Random Things</p>
-                                <p>ReAuth</p>
-                                <p>Resource Loader</p>
-                                <p>Replay Mod</p>
-                                <p>Server.Properties for LAN</p>
-                                <p>Shadowfacts' Forgelin</p>
-                                <p>Snad</p>
-                                <p>Tek Topia</p>
-                                <p>Tinkers' Addons</p>
-                                <p>Tinkers Construct</p>
-                                <p>Rinker's JEI</p>
-                                <p>Tinkers Mechworks Fork</p>
-                                <p>Rinkers' Reforged</p>
-                                <p>Tinkers' Tool Leveling</p>
-                                <p>Toast Control</p>
-                                <p>Tree Growing Simulator</p>
-                                <p>UniDict</p>
-                                <p>Varied Commodities</p>
-                                <p>Vending block</p>
-                                <p>ViesCraft - Airships</p>
-                                <p>Waila Harvestability</p>
-                                <p>WanionLib</p>
-                                <p>Waystpmes</p>
-                                <p>Wireless Crafting Terminal</p>
-                                <p>Wireless Pattern Terminal</p>
-                                <p>WorldEdit</p>
+                            <div class="col" id="pvmodlistw">
+                                <div class="row justify-content-center">
+                                    <div class="infos small-font">
+                                        <p>Actually Additions</p>
+                                        <p>AE2 Stuff</p>
+                                        <p>AE2 Wireless Fluid Terminal</p>
+                                        <p>AE2 Wireless Interface Terminal</p>
+                                        <p>AE2 Wireless Terminal Library</p>
+                                        <p>Applied Energistics 2</p>
+                                        <p>ArchitectureCraft - TridentMC Version</p>
+                                        <p>AutoRegLib</p>
+                                        <p>Backpacks</p>
+                                        <p>Baubles</p>
+                                        <p>Baubley Heart Canisters</p>
+                                        <p>BdLib</p>
+                                        <p>Bedrock B Gone</p>
+                                        <p>Better Advancements</p>
+                                        <p>Better Builder's Wands</p>
+                                        <p>BetterFps</p>
+                                        <p>BetterPortals</p>
+                                        <p>BiblioCraft</p>
+                                        <p>Chance Cubes</p>
+                                        <p>Chisel</p>
+                                        <p>Chisels & Bits</p>
+                                        <p>CodeChicken Lib 1.8+</p>
+                                        <p>Colytra</p>
+                                        <p>ConnectedTexturesMod</p>
+                                        <p>Construct's Armory</p>
+                                        <p>Cosmetic Armor Reworked</p>
+                                        <p>CraftPresence</p>
+                                        <p>CraftTweaker</p>
+                                        <p>CreativeCore</p>
+                                        <p>Custom Main Menu</p>
+                                        <p>Custom NPCs</p>
+                                        <p>Cyclops Core</p>
+                                        <p>DeathQuotes / Death Quotes</p>
+                                        <p>Decocraft</p>
+                                        <p>Ender Storage 1.8+</p>
+                                        <p>EverlastingAbilities</p>
+                                        <p>Ex Nihilo: Creatio</p>
+                                        <p>Extra Utilities</p>
+                                        <p>ExtraCells2</p>
+                                    </div>
+                                    <div class="infos small-font">
+                                        <p>Fast Leaf Decay</p>
+                                        <p>Fence Jumper</p>
+                                        <p>Flux Networks</p>
+                                        <p>Foamflower</p>
+                                        <p>FTB Backups</p>
+                                        <p>FTB Library</p>
+                                        <p>FTB Utilities</p>
+                                        <p>Googly Eyes</p>
+                                        <p>Hat Stand</p>
+                                        <p>Hats</p>
+                                        <p>Headcrumbs</p>
+                                        <p>Hwyla</p>
+                                        <p>iChunUtil</p>
+                                        <p>In-Game Account Switcher</p>
+                                        <p>InGame Info XML</p>
+                                        <p>Inventory Tweaks</p>
+                                        <p>Iron Chests</p>
+                                        <p>ItemPhysic Full</p>
+                                        <p>JourneyMap</p>
+                                        <p>Just Enough Energistics (JEE)</p>
+                                        <p>Just Enough Items (JEI)</p>
+                                        <p>Just Enough Resources (JER)</p>
+                                        <p>LunatriusCore</p>
+                                        <p>MalisisBlocks</p>
+                                        <p>MalisisCore</p>
+                                        <p>MalisisDoors</p>
+                                        <p>Mantle</p>
+                                        <p>Materialis</p>
+                                        <p>Mine Tweaker RecipeMaker</p>
+                                        <p>Moar Tinkers</p>
+                                        <p>Mob Grinding Utils</p>
+                                        <p>More Overlays</p>
+                                        <p>More Player Models</p>
+                                        <p>Morpheus</p>
+                                        <p>Mouse Tweaks</p>
+                                        <p>MrCrayfish's Furniture Mod</p>
+                                        <p>MrCrayfish's Gun Mod</p>
+                                        <p>MrCrayfish's Jumping Castle Mod</p>
+                                        <p>MrCrayfish's Vehicle Mod</p>
+                                    </div>
+                                    <div class="infos small-font">
+                                        <p>Natura</p>
+                                        <p>Neat</p>
+                                        <p>Obfuscate</p>
+                                        <p>OnlinePictureFrame</p>
+                                        <p>OpenBlocks</p>
+                                        <p>OpenModsLib</p>
+                                        <p>Ore Excavation</p>
+                                        <p>p455w0rd's Library</p>
+                                        <p>Pam's HarvestCraft</p>
+                                        <p>Placebo</p>
+                                        <p>PTRLib</p>
+                                        <p>Quark</p>
+                                        <p>Random Things</p>
+                                        <p>ReAuth</p>
+                                        <p>Resource Loader</p>
+                                        <p>Replay Mod</p>
+                                        <p>Server.Properties for LAN</p>
+                                        <p>Shadowfacts' Forgelin</p>
+                                        <p>Snad</p>
+                                        <p>Tek Topia</p>
+                                        <p>Tinkers' Addons</p>
+                                        <p>Tinkers Construct</p>
+                                        <p>Rinker's JEI</p>
+                                        <p>Tinkers Mechworks Fork</p>
+                                        <p>Rinkers' Reforged</p>
+                                        <p>Tinkers' Tool Leveling</p>
+                                        <p>Toast Control</p>
+                                        <p>Tree Growing Simulator</p>
+                                        <p>UniDict</p>
+                                        <p>Varied Commodities</p>
+                                        <p>Vending block</p>
+                                        <p>ViesCraft - Airships</p>
+                                        <p>Waila Harvestability</p>
+                                        <p>WanionLib</p>
+                                        <p>Waystpmes</p>
+                                        <p>Wireless Crafting Terminal</p>
+                                        <p>Wireless Pattern Terminal</p>
+                                        <p>WorldEdit</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer class="row justify-content-center text-center">
-            <div>
-                <p class="copyright">&copy; 2016-<span id="currentYear">2016</span> <a class="copyrighted" href="https://www.pixilaremedia.com">Pixilare Media</a></p>
-                <p class="copyright-sm">Page coded by <a class="copyrighted" href="https://www.twitter.com/Herobrain_gamer" target="_blank">William</a></p>
-            </div>
-        </footer>
+            <div include-html="/assets/html/footer.html" class="footer-info text-center"></div>
+        </div>
     </body>
 </html>

@@ -1,28 +1,23 @@
 /*Copyright Styling*/
 .copyright {
-    text-decoration: none;
-    color: darkgray;
+    color: white;
 }
 .copyrighted {
-    text-decoration: none;
-    color: darkgray;
+    color: white;
 }
 .copyrighted:hover {
-    text-decoration: underline;
-    color: lightgray;
+    color: rgb(70, 33, 151);
 }
 .copyright-sm {
-    text-decoration: none;
-    color: darkgray;
+    color: white;
     font-size: small;
 }
 .copyright-xs {
-    text-decoration: none;
-    color: darkgray;
+    color: white;
     font-size: xx-small;
 }
 
-/*Info Styling*/
+/*Info Styling
 .primary-title {
     text-decoration: none;
     color: purple;
@@ -64,35 +59,14 @@
     margin-bottom: 10px;
     margin-right: 3px;
     margin-left: 3px;
-}
+}*/
 
 /*Page Format Styling*/
 .container {
-    min-width: 992px!important;
     background-image: url(/assets/images/backgrounds/main.png);
     background-size: cover;
     background-attachment: fixed;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.col {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
+    font-family: 'Segoe Script';
 }
 .justify-content-center {
     -webkit-box-pack: center!important;
@@ -115,4 +89,9 @@
 }
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(134, 134, 134);
+}
+
+/*Global Styling*/
+a {
+    text-decoration: none;
 }
