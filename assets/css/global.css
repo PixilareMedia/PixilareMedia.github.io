@@ -17,56 +17,12 @@
     font-size: xx-small;
 }
 
-/*Info Styling
-.primary-title {
-    text-decoration: none;
-    color: purple;
-}
-.secondary-title {
-    text-decoration: none;
-    color: magenta;
-}
-.tertiary-title {
-    text-decoration: none;
-    color: violet;
-}
-.quaternary-title {
-    text-decoration: none;
-    color: pink;
-}
-.info {
-    border: 3px;
-    border-color: lightgray;
-    border-style: outset;
-    border-radius: 50px;
-    color: rgb(165, 112, 218);
-    font-size: large;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 3px;
-    margin-left: 3px;
-    background-color: rgba(51, 51, 51, 0.5);
-    text-decoration-line: none;
-}
-.infos {
-    border: 3px;
-    border-color: lightgray;
-    border-style: inset;
-    border-radius: 50px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 3px;
-    margin-left: 3px;
-}*/
-
 /*Page Format Styling*/
 .container {
     background-image: url(/assets/images/backgrounds/main.png);
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Segoe Script';
+    /*font-family: 'Segoe Script';*/
 }
 .justify-content-center {
     -webkit-box-pack: center!important;

@@ -34,7 +34,7 @@
 }
 .versions {
     color: violet;
-    font-family: 'Segoe Script';
+    /*font-family: 'Segoe Script';*/
 }
 .small-font {
     font-size: medium;
@@ -76,7 +76,7 @@
     color: white;
     border-radius: 10px;
     font-size: x-large;
-    font-family: 'Segoe Script';
+    /*font-family: 'Segoe Script';*/
 }
 .two-toggle:hover {
     background-color: #555;
