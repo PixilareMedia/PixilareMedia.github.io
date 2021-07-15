@@ -1,36 +1,39 @@
-document.addEventListener("DOMContentLoaded", pvHiddenBlocks);
+document.addEventListener("DOMContentLoaded", vars);
 
-function pvHiddenBlocks() {
-    document.getElementById("pvdownloadsw").style.display = "none";
-    document.getElementById("pvmodlistw").style.display = "none";
-    document.getElementById("pvbdlw").style.display = "none";
+var DL;
+var ML;
+var BDL;
+
+function vars() {
+    DL = document.getElementById("pv-downloads");
+    ML = document.getElementById("pv-mod-list");
+    BDL = document.getElementById("pv-beta-downloads");
+    hideLists();
+    hideDownloads();
 }
 
-function pvdownloadsf() {
-    document.getElementById("pvmodlistw").style.display = "none";
-    var x = document.getElementById("pvdownloadsw");
-    if(x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function hideLists() {
+    DL.style.display = "none";
+    ML.style.display = "none";
 }
 
-function pvmodlistf() {
-    document.getElementById("pvdownloadsw").style.display = "none";
-    var x = document.getElementById("pvmodlistw");
-    if(x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function hideDownloads() {
+    BDL.style.display = "none";
 }
 
-function pvbdlf() {
-    var x = document.getElementById("pvbdlw");
-    if(x.style.display === "none") {
-        x.style.display = "block";
+function openClose(name) {
+    if(name === DL || name === ML) {
+        if(name.style.display === "none") {
+            hideLists();
+            name.style.display = "block";
+        } else {
+            name.style.display = "none";
+        }
     } else {
-        x.style.display = "none";
+        if(name.style.display === "none") {
+            name.style.display = "block";
+        } else {
+            name.style.display = "none";
+        }
     }
 }

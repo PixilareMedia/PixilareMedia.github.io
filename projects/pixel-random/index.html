@@ -37,7 +37,6 @@
                             <p style="color: plum;">Zackman's : <a class="external-links-sm" href="https://www.instagram.com/zackman1291/" target="_blank">Instagram</a></p>
                             <p style="color: rebeccapurple;">Pixilare Media's : <a class="external-links-sm" href="https://twitter.com/PixilareMedia" target="_blank">Twitter</a>, <a class="external-links-sm" href="https://www.patreon.com/PixilareMedia" target="_blank">Patreon</a></p>
                             <p><a class="external-links" href="https://www.curseforge.com/minecraft/modpacks/pixel-random" target="_blank">Download from CurseForge</a></p>
-                            <p>If you donwload it from here you need to install it in the CurseForge app with a custom profile.</p>
                         </div>
                     </div>
                     <div class="col infos text-center">
@@ -50,23 +49,24 @@
                             <div class="row justify-content-center text-center">
                                 <div class="col"></div>
                                 <div class="col infos">
-                                    <button class="two-toggle" onclick="prdownloadsf()">Donwloads (Mirror)</button>
+                                    <button class="two-toggle" onclick="openClose(DL)">Donwloads (Mirror)</button>
                                 </div>
                                 <div class="col infos">
-                                    <button class="two-toggle" onclick="prmodlistf()">ModList</button>
+                                    <button class="two-toggle" onclick="openClose(ML)">ModList</button>
                                 </div>
                                 <div class="col"></div>
                             </div>
-                            <div class="col text-center" id="prdownloadsw">
+                            <div class="col text-center" id="pr-downloads">
                                 <div class="row justify-content-center">
                                     <div class="col"></div>
                                     <div class="col infos">
                                         <p><a class="external-links" href="https://www.curseforge.com/minecraft/modpacks/pixel-random" target="_blank">Main Download from CurseForge</a></p>
                                         <h1>Downloads (Mirror)</h1>
-                                        <button onclick="prbdlf()" class="hideshowBtn versions" title="Show/Hide Pixel Random Beta Downloads">Beta</button>
-                                        <button onclick="prbsdlf()" class="hideshowBtn versions" title="Show/Hide Pixel Random Beta Server Downloads">Beta Server</button>
-                                        <button onclick="pradlf()" class="hideshowBtn versions" title="Show/Hide Pixel Random Alpha Downloads">Alpha</button>
-                                        <div class="col text-center infos" id="prbdlw">
+                                        <button onclick="openClose(BDL)" class="hideshowBtn versions" title="Show/Hide Pixel Random Beta Downloads">Beta</button>
+                                        <button onclick="openClose(BSDL)" class="hideshowBtn versions" title="Show/Hide Pixel Random Beta Server Downloads">Beta Server</button>
+                                        <button onclick="openClose(ADL)" class="hideshowBtn versions" title="Show/Hide Pixel Random Alpha Downloads">Alpha</button>
+                                        <div class="col text-center infos" id="pr-beta-downloads">
+                                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.6.zip">Beta 1.6</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.5.zip">Beta 1.5</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.4.1.zip">Beta 1.4.1</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.4.zip">Beta 1.4</a></p>
@@ -76,7 +76,8 @@
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.1.zip">Beta 1.1</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.0.zip">Beta 1.0</a></p>
                                         </div>
-                                        <div class="col text-center infos" id="prbsdlw">
+                                        <div class="col text-center infos" id="pr-beta-server-downloads">
+                                            <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.6-server.zip">Beta 1.6 Server</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.5-server.zip">Beta 1.5 Server</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.4.1-server.zip">Beta 1.4.1 Server</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.4-server.zip">Beta 1.4 Server</a></p>
@@ -86,7 +87,7 @@
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.1-server.zip">Beta 1.1 Server</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-beta-1.0-server.zip">Beta 1.0 Server</a></p>
                                         </div>
-                                        <div class="col text-center infos" id="pradlw">
+                                        <div class="col text-center infos" id="pr-alpha-downloads">
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-alpha-4.zip">Alpha 4</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-alpha-3.zip">Alpha 3</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-random/pixel-random-alpha-2.zip">Alpha 2</a></p>
@@ -96,11 +97,12 @@
                                     <div class="col"></div>
                                 </div>
                             </div>
-                            <div class="col" id="prmodlistw">
+                            <div class="col" id="pr-mod-list">
                                 <div class="row justify-content-center">
                                     <div class="infos small-font">
                                         <p>Abnormals Core</p>
                                         <p>Additional Banners</p>
+                                        <p>Advanced Chimneys</p>
                                         <p>AI Improvements</p>
                                         <p>Akashic Tome</p>
                                         <p>Apple Skin</p>
@@ -147,9 +149,9 @@
                                         <p>Dark Utilities</p>
                                         <p>Default Options</p>
                                         <p>EmbellishCraft</p>
+                                        <p>Embellish Craft Biomes O' Plenty</p>
                                     </div>
                                     <div class="infos small-font">
-                                        <p>Embellish Craft Biomes O' Plenty</p>
                                         <p>Enchantment Descriptions</p>
                                         <p>Ender Storage 1.8.+</p>
                                         <p>Engineer's Decor</p>
@@ -164,9 +166,11 @@
                                         <p>FTB Chunks</p>
                                         <p>FTB Essentials</p>
                                         <p>FTB GUI Library</p>
+                                        <p>FTB Quests</p>
                                         <p>FTB Ranks</p>
                                         <p>FTB Teams</p>
                                         <p>FTB Ultimine</p>
+                                        <p>ForgeEndertech</p>
                                         <p>Hwyla</p>
                                         <p>Immersive Engineering</p>
                                         <p>Immersive Petroleum</p>
@@ -176,6 +180,8 @@
                                         <p>Inventory Tweaks Renewed</p>
                                         <p>Iron Jetpacks</p>
                                         <p>It's The Little Things</p>
+                                        <p>Item Filters</p>
+                                        <p>In-Game Account Switcher</p>
                                         <p>ItemPhysic Full</p>
                                         <p>JEI Integration</p>
                                         <p>JEITweaker</p>
@@ -196,9 +202,9 @@
                                         <p>MoreVanillaLib</p>
                                         <p>Morpheus</p>
                                         <p>Mouse Tweaks</p>
-                                        <p>MrCrayFish's Furnture Mod</p>
                                     </div>
                                     <div class="infos small-font">
+                                        <p>MrCrayFish's Furnture Mod</p>
                                         <p>MrCrayFish's Gun Mod</p>
                                         <p>MrCrayFish's Vehicle Mod</p>
                                         <p>Mystical Adaptations</p>
@@ -218,6 +224,7 @@
                                         <p>Performant</p>
                                         <p>Placebo</p>
                                         <p>Platypuses</p>
+                                        <p>Pollution of the Realms</p>
                                         <p>ProjectE</p>
                                         <p>RandomPatches</p>
                                         <p>ReAuth</p>

@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", includeHTML);
+document.addEventListener("DOMContentLoaded", startup);
 
-function includeHTML() {
+function startup() {
     var z, i, elmnt, file, xhttp;
     z = document.getElementsByTagName("*");
     for (i = 0; i < z.length; i++) {
@@ -17,7 +17,7 @@ function includeHTML() {
                         elmnt.innerHTML = "Page not found.";
                     }
                     elmnt.removeAttribute("include-html");
-                    includeHTML();
+                    startup();
                 }
             }
             xhttp.open("GET", file, true);
@@ -25,10 +25,6 @@ function includeHTML() {
             return;
         }
     }
-    currentYear();
-}
-
-function currentYear() {
     var y = new Date().getFullYear();
     document.getElementById("currentYear").textContent = y;
 }

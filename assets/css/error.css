@@ -1,10 +1,9 @@
-/*404 Styling*/
 .info {
     color: white;
     font-size: large;
 }
-.space-bottom {
-    padding-bottom: 5.5em;
+.content {
+    bottom: 0em;
 }
 .p-title {
     font-size: 250px;

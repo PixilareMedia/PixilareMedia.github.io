@@ -1,63 +1,46 @@
-document.addEventListener("DOMContentLoaded", prHiddenBlocks);
+document.addEventListener("DOMContentLoaded", vars);
 
-function prHiddenBlocks() {
-    document.getElementById("prdownloadsw").style.display = "none";
-    document.getElementById("prmodlistw").style.display = "none";
-    prDownloadHiddenBlocks();
+var DL;
+var ML;
+var ADL;
+var BDL;
+var BSDL;
+
+function vars() {
+    DL = document.getElementById("pr-downloads");
+    ML = document.getElementById("pr-mod-list");
+    ADL = document.getElementById("pr-alpha-downloads");
+    BDL = document.getElementById("pr-beta-downloads");
+    BSDL = document.getElementById("pr-beta-server-downloads");
+    hideLists();
+    hideDownloads();
 }
 
-function prDownloadHiddenBlocks() {
-    document.getElementById("prbdlw").style.display = "none";
-    document.getElementById("prbsdlw").style.display = "none";
-    document.getElementById("pradlw").style.display = "none";
+function hideLists() {
+    DL.style.display = "none";
+    ML.style.display = "none";
 }
 
-function prdownloadsf() {
-    var x = document.getElementById("prdownloadsw");
-    if(x.style.display === "none") {
-        document.getElementById("prmodlistw").style.display = "none";
-        x.style.display = "block";
+function hideDownloads() {
+    ADL.style.display = "none";
+    BDL.style.display = "none";
+    BSDL.style.display = "none";
+}
+
+function openClose(name) {
+    if(name === DL || name === ML) {
+        if(name.style.display === "none") {
+            hideLists();
+            name.style.display = "block";
+        } else {
+            name.style.display = "none";
+        }
     } else {
-        x.style.display = "none";
-    }
-}
-
-function prmodlistf() {
-    var x = document.getElementById("prmodlistw");
-    if(x.style.display === "none") {
-        document.getElementById("prdownloadsw").style.display = "none";
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function prbdlf() {
-    var x = document.getElementById("prbdlw");
-    if(x.style.display === "none") {
-        prDownloadHiddenBlocks();
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function prbsdlf() {
-    var x = document.getElementById("prbsdlw");
-    if(x.style.display === "none") {
-        prDownloadHiddenBlocks();
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function pradlf() {
-    var x = document.getElementById("pradlw");
-    if(x.style.display === "none") {
-        prDownloadHiddenBlocks();
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
+        if(name.style.display === "none") {
+            hideDownloads();
+            name.style.display = "block";
+        } else {
+            name.style.display = "none";
+        }
     }
 }

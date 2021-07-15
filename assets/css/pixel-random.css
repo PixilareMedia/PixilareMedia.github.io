@@ -34,7 +34,6 @@
 }
 .versions {
     color: violet;
-    /*font-family: 'Segoe Script';*/
 }
 .small-font {
     font-size: medium;
@@ -42,8 +41,6 @@
 .space-bottom {
     padding-bottom: 4em;
 }
-
-/*Pixel Random's Styling*/
 .landscape {
     width: 25%;
     height: auto;
@@ -72,7 +69,6 @@
 .external-links-sm:hover {
     color: rgb(127, 90, 207);
 }
-
 .two-toggle {
     border: 3px;
     border-color: gray;
@@ -83,12 +79,10 @@
     color: white;
     border-radius: 10px;
     font-size: x-large;
-    /*font-family: 'Segoe Script';*/
 }
 .two-toggle:hover {
     background-color: #555;
 }
-
 .hideshowBtn {
     border: 3px;
     border-color: gray;

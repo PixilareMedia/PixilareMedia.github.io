@@ -36,6 +36,10 @@
     text-decoration: none;
     color: gray;
 }
+.team-decription {
+    color: rgb(160, 160, 160);
+    font-size: medium;
+}
 .team-ats {
     color: darkgray;
     font-size: small;

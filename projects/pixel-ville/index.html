@@ -30,7 +30,6 @@
                         <p>Create a custom story-driven world with your friends</p>
                         <p>And much more to come. . .</p>
                         <p><a class="external-links" href="https://www.curseforge.com/minecraft/modpacks/pixel-ville" target="_blank">Download from CurseForge</a></p>
-                        <p>If you donwload it from here you need to install it in the Curse app with a custom profile.</p>
                     </div>
                     <div class="col infos justify-content-center text-center">
                         <h2 class="secondary-title">Screenshots</h2>
@@ -43,21 +42,21 @@
                             <div class="row justify-content-center text-center">
                                 <div class="col"></div>
                                 <div class="col infos">
-                                    <button class="two-toggle" onclick="pvdownloadsf()">Donwloads (Mirror)</button>
+                                    <button class="two-toggle" onclick="openClose(DL)">Donwloads (Mirror)</button>
                                 </div>
                                 <div class="col infos">
-                                    <button class="two-toggle" onclick="pvmodlistf()">ModList</button>
+                                    <button class="two-toggle" onclick="openClose(ML)">ModList</button>
                                 </div>
                                 <div class="col"></div>
                             </div>
-                            <div class="row justify-content-center" id="pvdownloadsw">
+                            <div class="row justify-content-center" id="pv-downloads">
                                 <div class="row justify-content-center">
                                     <div class="col"></div>
                                     <div class="col infos">
                                         <p><a class="external-links" href="https://www.curseforge.com/minecraft/modpacks/pixel-ville" target="_blank">Main Download from CurseForge</a></p>
                                         <h1>Downloads (Mirror)</h1>
-                                        <button onclick="pvbdlf()" class="hideshowBtn versions" title="Show/Hide Pixel Ville Beta Downloads">Beta</button>
-                                        <div class="col text-center infos" id="pvbdlw">
+                                        <button onclick="openClose(BDL)" class="hideshowBtn versions" title="Show/Hide Pixel Ville Beta Downloads">Beta</button>
+                                        <div class="col text-center infos" id="pv-beta-downloads">
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.6.zip">Beta 0.6</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.5.zip">Beta 0.5</a></p>
                                             <p><a class="downloads" href="https://download.pixilaremedia.com/pixilare-media/pixel-ville/pixel-ville-beta-0.4.zip">Beta 0.4</a></p>
@@ -69,7 +68,7 @@
                                     <div class="col"></div>
                                 </div>
                             </div>
-                            <div class="col" id="pvmodlistw">
+                            <div class="col" id="pv-mod-list">
                                 <div class="row justify-content-center">
                                     <div class="infos small-font">
                                         <p>Actually Additions</p>
