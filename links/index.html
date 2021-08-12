@@ -5,14 +5,12 @@
         <title>Links - Pixilare Media</title>
         <link rel="shortcut icon" href="/assets/images/logos/pixilaremedia.png">
         <link rel="stylesheet" href="/assets/css/global.css">
-        <link rel="stylesheet" href="/assets/css/navigation.css">
-        <link rel="stylesheet" href="/assets/css/top.css">
         <link rel="stylesheet" href="/assets/css/links.css">
-        <script src="/assets/js/global.js"></script>
-        <script src="/assets/js/top.js"></script>
+        <script defer src="/assets/js/global.js"></script>
     </head>
-    <body class="container">
-        <div include-html="/assets/html/top.html"></div>
+    <body class="container dark">
+        <button id="topBtn" title="Go to top">Top</button>
+        <button id="themeBtn" title="Switch Theme"><img src="/assets/images/icons/theme.png" alt="A Theme Icon"></button>
         <div include-html="/assets/html/nav.html" class="nav"></div>
         <div class="content justify-content-center text-center space-bottom">
             <div class="justify-content-center text-center info">
@@ -22,28 +20,28 @@
                         <div class="row">
                             <div class="col text-center box">
                                 <h2 class="tertiary-title">YouTube</h2>
-                                <a class="external-links" href="https://www.youtube.com/channel/UClfBdQbrNONNys3xpfvnZ9w" target="_blank">
+                                <a href="https://www.youtube.com/channel/UClfBdQbrNONNys3xpfvnZ9w" target="_blank">
                                     <img class="image-links" src="/assets/images/logos/youtube.png" alt="The YouTube Logo"/>
                                 </a>
                                 <p class="ats">@PixilareMedia</p>
                             </div>
                             <div class="col text-center box">
                                 <h2 class="tertiary-title">Twitch</h2>
-                                <a class="external-links" href="https://www.twitch.tv/pixilaremedia" target="_blank">
+                                <a href="https://www.twitch.tv/pixilaremedia" target="_blank">
                                     <img class="image-links" src="/assets/images/logos/twitch.png" alt="The Twitch Logo"/>
                                 </a>
                                 <p class="ats">@PixilareMedia</p>
                             </div>
                             <div class="col text-center box">
                                 <h2 class="tertiary-title">Twitter</h2>
-                                <a class="external-links" href="https://twitter.com/PixilareMedia" target="_blank">
+                                <a href="https://twitter.com/PixilareMedia" target="_blank">
                                     <img class="image-links" src="/assets/images/logos/twitter.png" alt="The Twitter Logo"/>
                                 </a>
                                 <p class="ats">@PixilareMedia</p>
                             </div>
                             <div class="col text-center box">
                                 <h2 class="tertiary-title">Instagram</h2>
-                                <a class="external-links" href="https://www.instagram.com/pixilaremedia/" target="_blank">
+                                <a href="https://www.instagram.com/pixilaremedia/" target="_blank">
                                     <img class="image-links" src="/assets/images/logos/instagram.png" alt="The Instagram Logo"/>
                                 </a>
                                 <p class="ats">@PixilareMedia</p>
@@ -52,28 +50,28 @@
                         <div class="row">
                             <div class="col text-center box">
                                 <h2 class="tertiary-title">Discord</h2>
-                                <a class="external-links" href="https://discord.gg/5RXY344" target="_blank">
+                                <a href="https://discord.gg/5RXY344" target="_blank">
                                     <img class="image-links" src="/assets/images/logos/discord.png" alt="The Discord Logo"/>
                                 </a>
                                 <p class="ats">@PixilareMedia</p>
                             </div>
                             <div class="col text-center box">
                                 <h2 class="tertiary-title">GitHub</h2>
-                                <a class="external-links" href="https://github.com/PixilareMedia" target="_blank">
+                                <a href="https://github.com/PixilareMedia" target="_blank">
                                     <img class="image-links" src="/assets/images/logos/github.png" alt="The GitHub Logo"/>
                                 </a>
                                 <p class="ats">@PixilareMedia</p>
                             </div>
                             <div class="col text-center box">
                                 <h2 class="tertiary-title">Curse Forge</h2>
-                                <a class="external-links" href="https://www.curseforge.com/members/pixilaremedia/projects" target="_blank">
+                                <a href="https://www.curseforge.com/members/pixilaremedia/projects" target="_blank">
                                     <img class="image-links" src="/assets/images/logos/curseforge.png" alt="The Curse Forge Logo"/>
                                 </a>
                                 <p class="ats">@PixilareMedia</p>
                             </div>
                             <div class="col text-center box">
                                 <h2 class="tertiary-title">Patreon</h2>
-                                <a class="external-links" href="https://www.patreon.com/PixilareMedia" target="_blank">
+                                <a href="https://www.patreon.com/PixilareMedia" target="_blank">
                                     <img class="image-links" src="/assets/images/logos/patreon.png" alt="The Patreon Logo"/>
                                 </a>
                                 <p class="ats">@PixilareMedia</p>
@@ -82,7 +80,9 @@
                     </div>
                 </div>
             </div>
-            <div include-html="/assets/html/footer.html" class="footer-info text-center"></div>
+            <div class="footer-info text-center">
+                <p class="copyright">&copy; 2016-<span id="currentYear">NULL</span> | All Rights Reserved | <a class="copyrighted" href="https://www.pixilaremedia.com">Pixilare Media</a> <span class="copyright-sm">| Site Version <a class="copyrighted" id="siteVersion" href="https://github.com/PixilareMedia/PixilareMedia.github.io/commits/master" target="_blank">NULL</a> |</span></p>
+            </div>
         </div>
     </body>
 </html>

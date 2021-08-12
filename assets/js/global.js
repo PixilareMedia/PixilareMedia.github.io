@@ -25,6 +25,41 @@ function startup() {
             return;
         }
     }
-    var y = new Date().getFullYear();
-    document.getElementById("currentYear").textContent = y;
+    var year = new Date().getFullYear();
+    var version = "v3.12";
+    document.getElementById("currentYear").textContent = year;
+    document.getElementById("siteVersion").textContent = version;
+}
+
+const themeButton = document.getElementById("themeBtn");
+const body = document.body;
+const theme = localStorage.getItem('theme');
+var currentTheme = theme;
+if(theme){
+    body.classList.add(theme);
+}
+themeButton.onclick = () => {
+    if(currentTheme === 'light')
+    {
+        body.classList.replace('light', 'dark');
+        localStorage.setItem('theme', 'dark');
+        currentTheme = 'dark';
+    } else {
+        body.classList.replace('dark', 'light');
+        localStorage.setItem('theme', 'light');
+        currentTheme = 'light';
+    }
+}
+
+const topButton = document.getElementById("topBtn");
+window.onscroll = () => {
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topBtn").style.display = "block";
+    } else {
+        document.getElementById("topBtn").style.display = "none";
+    }
+}
+topButton.onclick = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }

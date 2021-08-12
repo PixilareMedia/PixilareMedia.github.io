@@ -1,39 +1,59 @@
-.row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+:root {
+    --infos-bg-dark: hsla(0, 0%, 20%, 0.5);
+    --infos-bg-light: hsla(0, 0%, 80%, 0.75);
+    --infos-bg-border-dark: hsl(210, 14%, 53%);
+    --infos-bg-border-light: hsl(210, 4%, 53%);
+    --versions-dark: hsl(300, 76%, 72%);
+    --versions-light: hsl(300, 100%, 39%);
+    --landscape-border-dark: hsl(0, 0%, 50%);
+    --landscape-border-light: hsl(0, 0%, 29%);
+    --downloads-dark: hsl(120, 73%, 75%);
+    --downloads-light: hsl(120, 69%, 32%);
+    --external-link-dark: hsl(180, 100%, 50%);
+    --external-link-light: hsl(180, 59%, 45%);
+    --hide-show-bg-dark: hsla(204, 100%, 50%, 0);
+    --hide-show-bg-light: hsla(204, 50%, 50%, 0);
+    --hide-show-bg-hover-dark: hsl(0, 0%, 33%);
+    --hide-show-bg-hover-light: hsl(0, 0%, 13%);
 }
-.col {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
+.dark {
+    --infos-bg: var(--infos-bg-dark);
+    --infos-bg-border: var(--infos-bg-border-dark);
+    --versions: var(--versions-dark);
+    --landscape-border: var(--landscape-border-dark);
+    --downloads: var(--downloads-dark);
+    --external-links: var(--external-link-dark);
+    --hide-show-bg: var(--hide-show-bg-dark);
+    --hide-show-bg-hover: var(--hide-show-bg-hover-dark);
 }
+.light {
+    --infos-bg: var(--infos-bg-light);
+    --infos-bg-border: var(--infos-bg-border-light);
+    --versions: var(--versions-light);
+    --landscape-border: var(--landscape-border-light);
+    --downloads: var(--downloads-light);
+    --external-links: var(--external-link-light);
+    --hide-show-bg: var(--hide-show-bg-light);
+    --hide-show-bg-hover: var(--hide-show-bg-hover-light);
+}
+
 .info {
-    color: white;
+    color: var(--text);
     font-size: large;
     padding: 10px;
 }
 .infos {
     border: 3px;
-    border-color: lightslategray;
+    border-color: var(--infos-bg-border);
     border-style: inset;
     border-radius: 25px;
     font-size: large;
     padding: 10px;
     margin: 5px;
-    background-color: rgba(51, 51, 51, 0.5);
+    background-color: var(--infos-bg);
 }
 .versions {
-    color: violet;
+    color: var(--versions);
 }
 .small-font {
     font-size: medium;
@@ -45,34 +65,34 @@
     width: 45%;
     height: auto;
     border: 3px;
-    border-color: gray;
+    border-color: var(--landscape-border);
     border-style: double;
     border-radius: 10px;
 }
 .downloads {
     text-decoration: none;
-    color: lightgreen;
+    color: var(--downloads);
 }
 .downloads:hover {
-    color: rgb(127, 90, 207);
+    color: var(--link);
 }
 .external-links {
     font-size: larger;
-    color: aqua;
+    color: var(--external-links);
 }
 .external-links:hover {
-    color: rgb(127, 90, 207);
+    color: var(--link);
 }
 .hideshowBtn {
     border: 3px;
-    border-color: gray;
+    border-color: var(--landscape-border);
     border-style: groove;
     outline: none;
-    background-color: rgba(0, 153, 255, 0);
+    background-color: var(--hide-show-bg);
     cursor: pointer;
     border-radius: 10px;
     font-size: large;
 }
 .hideshowBtn:hover {
-    background-color: #555;
+    background-color: var(--hide-show-bg-hover);
 }

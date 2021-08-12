@@ -1,5 +1,5 @@
 .info {
-    color: white;
+    color: var(--text);
     font-size: large;
 }
 .content {
@@ -9,8 +9,8 @@
     font-size: 250px;
 }
 .s-title {
-    color: violet;
+    color: var(--link-2);
 }
 .s-title:hover {
-    color: rgb(127, 90, 207);
+    color: var(--link);
 }
