@@ -1,0 +1,115 @@
+@import './base.css';
+
+#app {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto 5fr auto;
+    column-gap: 0;
+    row-gap: 0;
+}
+#navigation {
+    grid-area: 1 / 1 / 2 / 4;
+}
+#main-content {
+    grid-area: 2 / 2 / 3 / 3;
+}
+#sidebar {
+    grid-area: 2 / 1 / 3 / 2;
+}
+#advertising {
+    grid-area: 2 / 3 / 3 / 4;
+}
+#footer {
+    grid-area: 3 / 1 / 4 / 4;
+}
+
+.dark {
+    --scrollbar-track: var(--scrollbar-track-dark);
+    --scrollbar-thumb: var(--scrollbar-thumb-dark);
+    --scrollbar-thumb-hover: var(--scrollbar-thumb-hover-dark);
+
+    --background: var(--background-dark);
+
+    --text: var(--text-dark);
+
+    --link-hover: var(--link-hover-dark);
+    --link-external-hover: var(--link-external-hover-dark);
+
+    --navigation-background: var(--navigation-background-dark);
+    --navigation-background-border: var(--navigation-background-border-dark);
+
+    --footer-background: var(--footer-background-dark);
+
+    --image-border: var(--image-border-dark);
+    
+    --section-backgound: var(--section-backgound-dark);
+    --section-backgound-border: var(--section-backgound-border-dark);
+
+    --button-project-background: var(--button-project-background-dark);
+    --button-project-backgound-hover: var(--button-project-backgound-hover-dark);
+    --button-project-border: var(--button-project-border-dark);
+    --button-project-link-mirror: var(--button-project-link-mirror-dark);
+    --button-project-link: var(--button-project-link-dark);
+
+    --team-member-card-background: var(--team-member-card-background-dark);
+    --team-member-card-background-border: var(--team-member-card-background-border-dark);
+    --team-member-card-avatar-border: var(--team-member-card-avatar-border-dark);
+    --team-member-card-titles-text: var(--team-member-card-titles-text-dark);
+    --team-member-card-description-text: var(--team-member-card-description-text-dark);
+    --team-member-card-social-text: var(--team-member-card-social-text-dark);
+        
+    --social-link-card-background: var(--social-link-card-background-dark);
+    --social-link-card-background-border: var(--social-link-card-background-border-dark);
+    --social-link-card-background-shadow: var(--social-link-card-background-shadow-dark);
+    --social-link-card-at: var(--social-link-card-at-dark);
+
+    --project-card-background: var(--project-card-background-dark);
+    --project-card-background-border: var(--project-card-background-border-dark);
+    --project-card-background-shadow: var(--project-card-background-shadow-dark);
+    --project-card-poster: var(--project-card-poster-dark);
+}
+.light {
+    --scrollbar-track: var(--scrollbar-track-light);
+    --scrollbar-thumb: var(--scrollbar-thumb-light);
+    --scrollbar-thumb-hover: var(--scrollbar-thumb-hover-light);
+
+    --background: var(--background-light);
+
+    --text: var(--text-light);
+
+    --link-hover: var(--link-hover-light);
+    --link-external-hover: var(--link-external-hover-light);
+
+    --navigation-background: var(--navigation-background-light);
+    --navigation-background-border: var(--navigation-background-border-light);
+
+    --footer-background: var(--footer-background-light);
+
+    --image-border: var(--image-border-light);
+
+    --section-backgound: var(--section-backgound-light);
+    --section-backgound-border: var(--section-backgound-border-light);
+
+    --button-project-background: var(--button-project-background-light);
+    --button-project-backgound-hover: var(--button-project-backgound-hover-light);
+    --button-project-border: var(--button-project-border-light);
+    --button-project-link-mirror: var(--button-project-link-mirror-light);
+    --button-project-link: var(--button-project-link-light);
+
+    --team-member-card-background: var(--team-member-card-background-light);
+    --team-member-card-background-border: var(--team-member-card-background-border-light);
+    --team-member-card-avatar-border: var(--team-member-card-avatar-border-light);
+    --team-member-card-titles-text: var(--team-member-card-titles-text-light);
+    --team-member-card-description-text: var(--team-member-card-description-text-light);
+    --team-member-card-social-text: var(--team-member-card-social-text-light);
+
+    --social-link-card-background: var(--social-link-card-background-light);
+    --social-link-card-background-border: var(--social-link-card-background-border-light);
+    --social-link-card-background-shadow: var(--social-link-card-background-shadow-light);
+    --social-link-card-at: var(--social-link-card-at-light);
+
+    --project-card-background: var(--project-card-background-light);
+    --project-card-background-border: var(--project-card-background-border-light);
+    --project-card-background-shadow: var(--project-card-background-shadow-light);
+    --project-card-poster: var(--project-card-poster-light);
+}
