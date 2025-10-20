@@ -1,0 +1,50 @@
+---
+export interface Props {
+  siteName: string;
+  siteLogo: string;
+  siteLink: string;
+  siteSocial: string;
+}
+
+const { siteName, siteLogo, siteLink, siteSocial } = Astro.props;
+---
+
+<li class="link-card">
+  <h2 class="link-name">{siteName}</h2>
+  <a href={siteLink} target="_blank">
+    <img class="link-logo" src=`/images/logos/${siteLogo}` alt=`The ${siteName} logo.`>
+  </a>
+  <p class="link-social">{siteSocial}</p>
+</li>
+
+<style>
+  .link-card {
+    list-style: none;
+    background-color: var(--social-link-card-background);
+    border: 1px;
+    border-style: solid;
+    border-color: var(--social-link-card-background-border);
+    border-radius: 20px;
+    box-shadow: 0 2px 3px 0 var(--social-link-card-background-shadow);
+    transition: .2s all;
+    text-align: center;
+  }
+  .link-card:hover {
+    transform: scale(1.1);
+  }
+  .link-logo {
+    width: 50%;
+    height: auto;
+  }
+  .link-logo:hover {
+    transform: scale(1.25);
+  }
+  .link-name {
+    color: var(--text);
+  }
+  .link-social {
+    text-decoration: none;
+    font-size: small;
+    color: var(--social-link-card-at);
+  }
+</style>

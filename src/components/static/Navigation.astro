@@ -1,0 +1,279 @@
+---
+
+---
+
+<nav id="navigation-panel">
+  <ul id="navigation-list">
+    <li class="navigation-space">
+      <a class="navigation-link" href="/">
+        <img id="navigation-image" src="/images/icons/pixilaremedia.png" alt="The Pixilare Media Logo">
+      </a>
+    </li>
+    <li class="navigation-space">
+      <button id="navigation-company-button" class="navigation-category">
+        <p>Pixilare</p>
+      </button>
+    </li>
+    <li class="navigation-space" style="display: none;">
+      <button id="navigation-studios-interactive-button" class="navigation-category">
+        <p>Interactive</p>
+      </button>
+    </li>
+    <li class="navigation-space">
+      <button id="navigation-studios-modding-button" class="navigation-category">
+        <p>Modding</p>
+      </button>
+    </li>
+    <li class="navigation-space" style="display: none;">
+      <button id="navigation-studios-softworks-button" class="navigation-category">
+        <p>Softworks</p>
+      </button>
+    </li>
+    <li class="navigation-space" style="display: none;">
+      <button id="navigation-entertainment-comics-button" class="navigation-category">
+        <p>Comics</p>
+      </button>
+    </li>
+    <li class="navigation-space" style="display: none;">
+      <button id="navigation-entertainment-animation-button" class="navigation-category">
+        <p>Animation</p>
+      </button>
+    </li>
+    <li class="navigation-space" style="display: none;">
+      <button id="navigation-entertainment-pictures-button" class="navigation-category">
+        <p>Pictures</p>
+      </button>
+    </li>
+  </ul>
+  <div id="navigation-sub-panel">
+    <div id="navigation-company">
+      <ul class="navigation-panel-sub">
+        <li id="navigation-company-all" class="navigation-space">
+          <a class="navigation-link" href="/projects/">All Projects</a>
+        </li>
+        <li id="navigation-company-links" class="navigation-space">
+          <a class="navigation-link" href="/links/">Links</a>
+        </li>
+        <li id="navigation-company-team" class="navigation-space">
+          <a class="navigation-link" href="/team/">Team</a>
+        </li>
+        <li id="navigation-company-jobs" class="navigation-space" style="display: none;">
+          <a class="navigation-link" href="/jobs/">Jobs</a>
+        </li>
+      </ul>
+    </div>
+    <div id="navigation-studios-interactive">
+      <ul class="navigation-panel-sub">
+        <li id="navigation-studios-interactive-all" class="navigation-space">
+          <a class="navigation-link" href="/studios/interactive/projects/">All Projects</a>
+        </li>
+      </ul>
+    </div>
+    <div id="navigation-studios-modding">
+      <ul class="navigation-panel-sub">
+        <li id="navigation-studios-modding-all" class="navigation-space">
+          <a class="navigation-link" href="/studios/modding/projects/">All Projects</a>
+        </li>
+        <li id="navigation-studios-modding-pixel-series" class="navigation-space">
+          <a class="navigation-link" href="https://pixelseries.xyz/" target="_blank">Pixel Series</a>
+        </li>
+        <div id="navigation-studios-modding-resourcepacks">
+          <li class="navigation-space">
+            <a class="navigation-link" href="/studios/modding/minecraft/resource-packs/hollow-pvp/">Hollow PvP</a>
+          </li>
+        </div>
+        <div id="navigation-studios-modding-modpacks">
+          <li class="navigation-space">
+            <a class="navigation-link" href="/studios/modding/minecraft/mod-packs/pixel-random/">Pixel Random</a>
+          </li>
+          <li class="navigation-space">
+            <a class="navigation-link" href="/studios/modding/minecraft/mod-packs/pixel-ville/">Pixel Ville</a>
+          </li>
+        </div>
+        <div id="navigation-studios-modding-mods">
+        </div>
+      </ul>
+    </div>
+    <div id="navigation-studios-softworks">
+      <ul class="navigation-panel-sub">
+        <li id="navigation-studios-softworks-all" class="navigation-space">
+          <a class="navigation-link" href="/studios/softworks/projects/">All Projects</a>
+        </li>
+      </ul>
+    </div>
+    <div id="navigation-entertainment-animation">
+      <ul class="navigation-panel-sub">
+        <li id="navigation-entertainment-animation-all" class="navigation-space">
+          <a class="navigation-link" href="/entertainment/animation/projects/">All Projects</a>
+        </li>
+      </ul>
+    </div>
+    <div id="navigation-entertainment-comics">
+      <ul class="navigation-panel-sub">
+        <li id="navigation-entertainment-comics-all" class="navigation-space">
+          <a class="navigation-link" href="/entertainment/comics/projects/">All Projects</a>
+        </li>
+      </ul>
+    </div>
+    <div id="navigation-entertainment-pictures">
+      <ul class="navigation-panel-sub">
+        <li id="navigation-entertainment-pictures-all" class="navigation-space">
+          <a class="navigation-link" href="/entertainment/pictures/projects/">All Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /*Main Panel*/
+  #navigation-panel {
+    background-color: var(--navigation-background);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  #navigation-list {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: 1;
+    column-gap: 0;
+    row-gap: 0;
+
+    list-style: none;
+    font-size: 20px;
+    padding-left: 0em;
+    padding-right: 0em;
+    text-align: center;
+    align-items: center;
+  }
+  #navigation-image {
+    width: 4em;
+    height: auto;
+  }
+
+  /*Main Panel Categories*/
+  .navigation-category {
+    margin: 0em;
+    background: transparent;
+    color: var(--text);
+    border: 0em;
+    font-size: 1.5em;
+    font-family: 'segoe script';
+  }
+  .navigation-category:hover {
+    color: var(--link-hover);
+    cursor: pointer;
+  }
+  .navigation-category > p {
+    margin: 0em;
+  }
+
+  /*Panel Links & Spacing*/
+  .navigation-link {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .navigation-link:hover {
+    color: var(--link-hover);
+    cursor: pointer;
+  }
+  .navigation-space {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  
+  /*Sub Panels*/
+  #navigation-sub-panel {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+  }
+  .navigation-panel-sub {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 0;
+    row-gap: 0;
+
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    background-color: var(--navigation-background);
+    border: 5px;
+    border-style: solid;
+    border-color: var(--navigation-background-border);
+    border-radius: 25px;
+    padding-bottom: 1em;
+  }
+  
+  /*Grid Layouts for each of the sub panels*/
+  /*Pixilare sub panel*/
+  #navigation-company > .navigation-panel-sub > #navigation-company-all {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+  #navigation-company > .navigation-panel-sub > #navigation-company-links {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  #navigation-company > .navigation-panel-sub > #navigation-company-team {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  #navigation-company > .navigation-panel-sub > #navigation-company-jobs {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  
+  /*Interactive sub panel*/
+  #navigation-studios-interactive > .navigation-panel-sub > #navigation-studios-interactive-all {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+  
+  /*Modding sub panel*/
+  #navigation-studios-modding > .navigation-panel-sub > #navigation-studios-modding-all {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  #navigation-studios-modding > .navigation-panel-sub > #navigation-studios-modding-pixel-series {
+    grid-area: 1 / 3 / 2 / 5;
+  }
+  #navigation-studios-modding > .navigation-panel-sub > #navigation-studios-modding-resourcepacks {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  #navigation-studios-modding > .navigation-panel-sub > #navigation-studios-modding-modpacks {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  #navigation-studios-modding > .navigation-panel-sub > #navigation-studios-modding-mods {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  
+  /*Softworks sub panel*/
+  #navigation-studios-softworks > .navigation-panel-sub > #navigation-studios-softworks-all {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+  
+  /*Animation sub panel*/
+  #navigation-entertainment-animation > .navigation-panel-sub > #navigation-entertainment-animation-all {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+  
+  /*Comics sub panel*/
+  #navigation-entertainment-comics > .navigation-panel-sub > #navigation-entertainment-comics-all {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+  
+  /*Pictures sub panel*/
+  #navigation-entertainment-pictures > .navigation-panel-sub > #navigation-entertainment-pictures-all {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+</style>
+
+<script>
+  import { categoryButtonSetup, hideNavigationDivs } from "./navigation/categoryButtons.ts";
+  
+  document.addEventListener("DOMContentLoaded", navigationSetup)
+
+  function navigationSetup() {
+    categoryButtonSetup();
+    hideNavigationDivs();
+  }
+</script>

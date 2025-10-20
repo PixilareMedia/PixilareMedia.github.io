@@ -1,0 +1,180 @@
+---
+import Layout from "../../../../../layouts/GenericLayout.astro";
+import MirrorDownload from "../../../../../components/projects/MirrorDownloads.astro";
+import DownloadButton from "../../../../../components/projects/DownloadButtons.astro";
+---
+
+<Layout description="The Hollow PvP Minecraft Resourcepack Project." title="Hollow PvP - Resourcepack - Minecraft - Modding - Pixilare Media">
+  <div id="hollow-pvp-page">
+    <h1>Hollow PvP Resourcepack</h1>
+    <div class="sections">
+      <h2>About</h2>
+      <p>Hollow PvP Orignally designed by ELECTICITY & Herobrain_gamer to be a resource pack to help out with some problems they found when they were in pvp/pve on servers and in how things looked in general. Now its under going head of design changes and will be picking back up on work #soon</p>
+      <p>Creators : zackman1291 & Herobrain_gamer</p>
+      <p>Orignal Creators : Herobrain_gamer & ELECTICITY</p>
+      <p><a class="external-links" href="https://www.curseforge.com/minecraft/texture-packs/hollow-pvp" target="_blank">Download from CurseForge</a></p>
+    </div>
+    <div id="sub-section-images">
+      <div class="sections sub-section-images-align">
+        <h2>GUI Screenshots</h2>
+        <p>Codex Please Add More Picutes Here.</p>
+      </div>
+      <div class="sections sub-section-images-align">
+        <h2>Landscape Screenshots</h2>
+        <p>Codex Please Add More Picutes Here.</p>
+      </div>
+      <div class="sections sub-section-images-align">
+        <h2>Items Screenshots</h2>
+        <p>Codex Please Add More Picutes Here.</p>
+      </div>
+    </div>
+    <div class="sections">
+      <p><a class="external-links" href="https://www.curseforge.com/minecraft/texture-packs/hollow-pvp" target="_blank">Main Download from CurseForge</a></p>
+      <h1>Downloads (Mirror)</h1>
+      <DownloadButton buttonID="1-11" buttonName="1.11.x"/>
+      <DownloadButton buttonID="1-10" buttonName="1.10.x"/>
+      <DownloadButton buttonID="1-9" buttonName="1.9.x"/>
+      <DownloadButton buttonID="1-8" buttonName="1.8.x"/>
+      <DownloadButton buttonID="1-7" buttonName="1.7.x"/>
+      <div id="downloads-1-11" class="sections">
+        <h3>1.11.x</h3>
+        <ul class="download-mirror-list">
+          <MirrorDownload
+            downloadName="Hollow PvP Red 1.1"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-11-x/hollow-pvp-red-1.1.zip"
+          />
+          <MirrorDownload
+            downloadName="Hollow PvP Purple 1.1"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-11-x/hollow-pvp-purple-1.1.zip"
+          />
+          <MirrorDownload
+            downloadName="Hollow PvP 1.1"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-11-x/hollow-pvp-1.1.zip"
+          />
+          <MirrorDownload
+            downloadName="Hollow PvP Red 1.0"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-11-x/hollow-pvp-red-1.0.zip"
+          />
+          <MirrorDownload
+            downloadName="Hollow PvP Purple 1.0"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-11-x/hollow-pvp-purple-1.0.zip"
+          />
+          <MirrorDownload
+            downloadName="Hollow PvP 1.0"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-11-x/hollow-pvp-1.0.zip"
+          />
+        </ul>
+      </div>
+      <div id="downloads-1-10" class="sections">
+        <h3>1.10.x</h3>
+        <ul class="download-mirror-list">
+          <MirrorDownload
+            downloadName="Hollow PvP 1.0"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-10-x/hollow-pvp-1.0.zip"
+          />
+        </ul>
+      </div>
+      <div id="downloads-1-9" class="sections">
+        <h3>1.9.x</h3>
+        <ul class="download-mirror-list">
+          <MirrorDownload
+            downloadName="Hollow PvP 1.0"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-9-x/hollow-pvp-1.0.zip"
+          />
+        </ul>
+      </div>
+      <div id="downloads-1-8" class="sections">
+        <h3>1.8.x</h3>
+        <ul class="download-mirror-list">
+          <MirrorDownload
+            downloadName="Hollow PvP Red 1.0"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-8-x/hollow-pvp-red-1.0.zip"
+          />
+          <MirrorDownload
+            downloadName="Hollow PvP Purple 1.0"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-8-x/hollow-pvp-purple-1.0.zip"
+          />
+          <MirrorDownload
+            downloadName="Hollow PvP 1.0"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-8-x/hollow-pvp-1.0.zip"
+          />
+        </ul>
+      </div>
+      <div id="downloads-1-7" class="sections">
+        <h3>1.7.x</h3>
+        <ul class="download-mirror-list">
+          <MirrorDownload
+            downloadName="Hollow PvP 1.0"
+            downloadLink="minecraft/resource-packs/hollow-pvp/1-7-x/hollow-pvp-1.0.zip"
+          />
+        </ul>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  #hollow-pvp-page {
+    text-align: center;
+		margin-bottom: 3em;
+		margin-top: 1em;
+  }
+  #hollow-pvp-page > h1 {
+    margin-bottom: 1em;
+  }
+  .sections {
+		border: 3px;
+		border-color: var(--section-backgound-border);
+		border-style: inset;
+		border-radius: 25px;
+		font-size: large;
+		padding: 10px;
+		margin: 5px;
+		background-color: var(--section-backgound);
+  }
+  .external-links {
+    text-decoration: none;
+    color: var(--button-project-link);
+  }
+  .external-links:hover {
+    color: var(--link-hover);
+  }
+  .landscape {
+    width: 25%;
+    height: auto;
+    border: 3px;
+    border-color: var(--image-border);
+    border-style: double;
+    border-radius: 10px;
+  }
+  #sub-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  #sub-section-images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .sub-section-images-align {
+    width: 100%;
+  }
+  .download-mirror-list {
+    list-style: none;
+    padding: 0em;
+    margin: 0em;
+  }
+</style>
+
+<script>
+  import { categoryButtonSetup, hideDownloadsDivs } from "./hollow-pvp/script.ts";
+  
+  document.addEventListener("DOMContentLoaded", navigationSetup)
+
+  function navigationSetup() {
+    categoryButtonSetup();
+    hideDownloadsDivs();
+  }
+</script>

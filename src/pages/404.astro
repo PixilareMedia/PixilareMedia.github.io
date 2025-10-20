@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/GenericLayout.astro";
+---
+
+<Layout description="Our 404 Page for when people missspell things." title="404 - Pixilare Media">
+  <div id="page-404">
+    <h1>404</h1>
+    <h2>The content you were looking for does not exist, and for that were sorry.</h2>
+    <p><a href="/">Click me to head back to the front page.</a></p>
+    <div id="spacer"></div>
+  </div>
+</Layout>
+
+<style>
+  #page-404 {
+    color: var(--text);
+    text-align: center;
+  }
+  #page-404 > h1 {
+    font-size: 250px;
+  }
+  #page-404 > p > a {
+    color: var(--link-hover);
+    text-decoration: none;
+  }
+  #page-404 > p > a:hover {
+    color: var(--link-external-hover);
+  }
+  #spacer {
+    margin-bottom: 10em;
+  }
+</style>

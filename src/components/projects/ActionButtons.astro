@@ -1,0 +1,27 @@
+---
+export interface Props {
+  buttonID: string;
+  buttonName: string;
+}
+
+const { buttonID, buttonName } = Astro.props;
+---
+
+<button id=`${buttonID}-button` class="action-button">{buttonName}</button>
+
+<style>
+  .action-button {
+    color: var(--text);
+    border: 3px;
+    border-color: var(--button-project-border);
+    border-style: groove;
+    outline: none;
+    background-color: var(--button-project-background);
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: xx-large;
+  }
+  .action-button:hover {
+    background-color: var(--button-project-backgound-hover);
+  }
+</style>

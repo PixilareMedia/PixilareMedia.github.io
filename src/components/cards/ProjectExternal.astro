@@ -1,0 +1,41 @@
+---
+export interface Props {
+  link: string;
+  division: string;
+  projectId: string;
+  projectName: string;
+}
+
+const { link, division, projectId, projectName } = Astro.props;
+---
+
+<li class="project-card">
+  <a href={link} target="_blank" title=`The ${projectName} project.`>
+    <img class="project-poster" src=`/images/projects/${division}/${projectId}/poster.png` alt=`The ${projectName} poster.`/>
+  </a>
+</li>
+
+<style>
+  .project-card {
+    list-style: none;
+    background-color: var(--project-card-background);
+    border: 1px;
+    border-style: solid;
+    border-color: var(--project-card-background-border);
+    border-radius: 20px;
+    box-shadow: 0 2px 3px 0 var(--project-card-background-shadow);
+    transition: .2s all;
+  }
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  .project-poster {
+    width: 95%;
+    height: auto;
+    margin: 0.3em;
+    border: 3px;
+    border-style: solid;
+    border-color: var(--project-card-poster);
+    border-radius: 10px;
+  }
+</style>

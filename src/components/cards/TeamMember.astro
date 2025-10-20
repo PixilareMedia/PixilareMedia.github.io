@@ -1,0 +1,70 @@
+---
+export interface Props {
+  name: string;
+  avatar: string;
+  title1: string;
+  title2: string;
+  title3: string;
+  title4: string;
+  title5: string;
+  description: string;
+  socialAt: string;
+  socialLink: string;
+}
+
+const { name, avatar, title1, title2, title3, title4, title5, description, socialAt, socialLink } = Astro.props;
+---
+
+<li class="member-card">
+  <img class="member-avatar" src=`/images/team/${avatar}` alt=`${name}'s avatar.'`>
+  <h2 class="member-name">{name}</h2>
+  <p class="member-titles">{title1}</p>
+  <p class="member-titles">{title2}</p>
+  <p class="member-titles">{title3}</p>
+  <p class="member-titles">{title4}</p>
+  <p class="member-titles">{title5}</p>
+  <p class="member-description">{description}</p>
+  <a class="member-social" href={socialLink} target="_blank">{socialAt}</a>
+</li>
+
+<style>
+  .member-card {
+    list-style: none;
+    border: 3px;
+    border-color: var(--team-member-card-background-border);
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--team-member-card-background);
+  }
+  .member-avatar {
+    width: 40%;
+    height: auto;
+    border: 3px;
+    border-color: var(--team-member-card-avatar-border);
+    border-style: groove;
+    border-radius: 15px;
+  }
+  .member-name {
+    color: var(--text);
+  }
+  .member-titles {
+    text-decoration: none;
+    color: var(--team-member-card-titles-text);
+  }
+  .member-description {
+    font-size: medium;
+    color: var(--team-member-card-description-text);
+  }
+  .member-social {
+    text-decoration: none;
+    font-size: small;
+    color: var(--team-member-card-social-text);
+  }
+  .member-social:hover {
+    color: var(--link-external-hover);
+    cursor: pointer;
+  }
+</style>

@@ -1,0 +1,188 @@
+---
+
+---
+
+<footer id="site-footer">
+    <div id="site-copyright">
+        <p>
+            | &copy; 2016-<span id="currentYear">NULL</span> | All Rights Reserved | <a href="https://pixilaremedia.com">Pixilare Media</a> | Site Version <a href="https://github.com/PixilareMedia/PixilareMedia.github.io/commits/master" target="_blank">v4.0.0</a> |
+        </p>
+    </div>
+    <div id="site-links">
+        <ul style="display: none;">
+            <li><p><a href="/support/privacy-policy/" class="footer-site-link">Privacy Policy</a></p></li>
+            <li><p><a href="/support/cookie-policy/" class="footer-site-link">Cookie Policy</a></p></li>
+            <li><p><a href="/support/terms-of-service/" class="footer-site-link">Terms of Service</a></p></li>
+            <li><p><a href="/support/usage-guidelines/" class="footer-site-link">Usage Guidelines</a></p></li>
+            <li><p><a href="/support/contact-us/" class="footer-site-link">Contact Us</a></p></li>
+        </ul>
+    </div>
+    <div id="site-notices">
+        <div id="site-notices-one"><p></p></div>
+        <div id="site-notices-two"><p></p></div>
+        <div id="site-notices-three"><p></p></div>
+    </div>
+    <div id="site-other">
+        <button id="topButton" title="Go to the top of the page.">Page Top &uarr;</button>
+        <p>Select Theme</p>
+        <div id="site-other-themes">
+            <p><button id="autoThemeButton">Auto</button></p>
+            <p><button id="darkThemeButton">Dark</button></p>
+            <p><button id="lightThemeButton">Light</button></p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    #site-footer {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 0;
+        row-gap: 0;
+        color: var(--text);
+        text-align: center;
+        background-color: var(--footer-background);
+    }
+    #site-copyright {
+        grid-area: 1 / 1/ 2 / 4;
+    }
+    #site-links {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    #site-notices {
+        grid-area: 2 / 2 / 3 / 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, auto);
+        column-gap: 0;
+        row-gap: 0;
+    }
+    #site-other {
+        grid-area: 2 / 3 / 3 / 4;
+        padding-right: 0.9em;
+    }
+
+    /* Site Theme Selector */
+    #site-other-themes {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        column-gap: 0;
+        row-gap: 0;
+    }
+
+    /* Site Notices */
+    #site-notices-one {
+        grid-area: 1 / 1 / 2 / 2;
+        padding-right: 3em;
+        padding-left: 3em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+    #site-notices-two {
+        grid-area: 1 / 1 / 2 / 3;
+        padding-right: 3em;
+        padding-left: 3em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+    #site-notices-three {
+        grid-area: 1 / 1 / 2 / 4;
+        padding-right: 3em;
+        padding-left: 3em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+
+    /* Site Links */
+    #site-links > ul {
+        list-style: none;
+        padding-right: 3em;
+        padding-left: 3em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+    #site-links > ul > li > p {
+        margin: 0.5em;
+    }
+    .footer-site-link {
+        color: var(--text);
+        text-decoration: none;
+    }
+    .footer-site-link:hover {
+        color: var(--link-hover);
+    }
+
+    /* Site Copyright */
+    #site-copyright > p {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+    }
+    #site-copyright > p > a {
+        color: var(--text);
+        text-decoration: none;
+    }
+    #site-copyright > p > a:hover {
+        color: var(--link-hover);
+    }
+
+    /* Site Top Button */
+    #topButton {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: var(--text);
+        cursor: pointer;
+        padding: 1em;
+    }
+    #topButton:hover {
+        color: var(--link-hover);
+    }
+
+    /* Site Theme Buttons */
+    #autoThemeButton {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: var(--text);
+        cursor: pointer;
+    }
+    #autoThemeButton:hover {
+        color: var(--link-hover);
+    }
+    #darkThemeButton {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: var(--text);
+        cursor: pointer;
+    }
+    #darkThemeButton:hover {
+        color: var(--link-hover);
+    }
+    #lightThemeButton {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: var(--text);
+        cursor: pointer;
+    }
+    #lightThemeButton:hover {
+        color: var(--link-hover);
+    }
+</style>
+
+<script>
+    import { themeButtonSetup } from "./footer/themeButtons.ts";
+    import { currentYearSetup } from "./footer/currentYear.ts";
+    import { topButtonSetup } from "./footer/topButton.ts";
+
+    document.addEventListener("DOMContentLoaded", footerSetup)
+
+    function footerSetup() {
+        themeButtonSetup();
+        currentYearSetup();
+        topButtonSetup();
+    }
+</script>

@@ -1,0 +1,52 @@
+---
+import Layout from "../../../layouts/GenericLayout.astro";
+import Project from "../../../components/cards/Project.astro";
+import ProjectExternal from "../../../components/cards/ProjectExternal.astro";
+---
+
+<Layout description="All of Pixilare Moddings's projects." title="Projects - Modding - Pixilare Media">
+  <div id="all-projects-page">
+    <h1>All of Pixilare Moddings's Projects</h1>
+    <ul role="list" class="projects-grid">
+      <ProjectExternal
+        link="https://pixelseries.xyz/"
+        division="studios/modding/minecraft"
+        projectId="pixel-series"
+        projectName="Pixel Series"
+      />
+      <Project
+        division="studios/modding/minecraft/mod-packs"
+        projectId="pixel-random"
+        projectName="Pixel Random"
+      />
+      <Project
+        division="studios/modding/minecraft/mod-packs"
+        projectId="pixel-ville"
+        projectName="Pixel Ville"
+      />
+      <Project
+        division="studios/modding/minecraft/resource-packs"
+        projectId="hollow-pvp"
+        projectName="Hollow PvP"
+      />
+    </ul>
+  </div>
+</Layout>
+
+<style>
+  #all-projects-page {
+    text-align: center;
+		margin-bottom: 3em;
+		margin-top: 1em;
+  }
+  #all-projects-page > h1 {
+    margin-bottom: 1em;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0em;
+    margin-bottom: 2em;
+  }
+</style>

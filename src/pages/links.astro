@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/GenericLayout.astro";
+import Card from "../components/cards/SocialLink.astro";
+---
+
+<Layout description="All of Pixilare Media's social links." title="Links - Pixilare Media">
+  <div id="links-page">
+    <h1>Pixilare Media's Links</h1>
+    <ul role="list" class="link-grid">
+      <Card
+        siteName="YouTube"
+        siteLogo="youtube.png"
+        siteLink="https://www.youtube.com/@PixilareMedia"
+        siteSocial="@PixilareMedia"
+      />
+      <Card
+        siteName="Twitch"
+        siteLogo="twitch.png"
+        siteLink="https://www.twitch.tv/pixilaremedia"
+        siteSocial="@PixilareMedia"
+      />
+      <Card
+        siteName="Discord"
+        siteLogo="discord.png"
+        siteLink="https://discord.gg/mFgAj5UvFS"
+        siteSocial="@PixilareMedia"
+      />
+      <Card
+        siteName="Twitter"
+        siteLogo="twitter.png"
+        siteLink="https://www.twitter.com/@PixilareMedia"
+        siteSocial="@PixilareMedia"
+      />
+      <Card
+        siteName="Instagram"
+        siteLogo="instagram.png"
+        siteLink="https://www.instagram.com/pixilaremedia"
+        siteSocial="@pixilaremedia"
+      />
+      <Card
+        siteName="Curse Forge"
+        siteLogo="curseforge.png"
+        siteLink="https://www.curseforge.com/members/pixilaremedia/projects"
+        siteSocial="@PixilareMedia"
+      />
+      <Card
+        siteName="Modrinth"
+        siteLogo="modrinth.png"
+        siteLink="https://modrinth.com/organization/PixilareMedia"
+        siteSocial="@PixilareMedia"
+      />
+      <Card
+        siteName="GitHub"
+        siteLogo="github.png"
+        siteLink="https://github.com/PixilareMedia"
+        siteSocial="@PixilareMedia"
+      />
+      <Card
+        siteName="Patreon"
+        siteLogo="patreon.png"
+        siteLink="https://www.patreon.com/PixilareMedia"
+        siteSocial="@PixilareMedia"
+      />
+    </ul>
+    <div id="links-spacer"></div>
+  </div>
+</Layout>
+
+<style>
+  #links-page {
+    text-align: center;
+		margin-bottom: 3em;
+		margin-top: 1em;
+  }
+  #links-page > h1 {
+    margin-bottom: 1em;
+  }
+  .link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1em;
+    padding: 0em;
+    margin-bottom: 2em;
+  }
+  #links-spacer {
+    margin-bottom: 12em;
+  }
+</style>

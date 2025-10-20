@@ -1,0 +1,109 @@
+---
+import Layout from "../layouts/GenericLayout.astro";
+import Project from "../components/cards/Project.astro";
+import ProjectExternal from "../components/cards/ProjectExternal.astro";
+---
+
+<Layout description="The front page of the Pixilare Media website." title="Pixilare Media">
+	<div id="home-page">
+		<img id="mainPageWordLogo" src="/images/icons/pixilaremedia-name.png" alt="The Pixialre Media Word Art Logo.">
+		<div id="mainPageGroup1" class="group-sections">
+			<h1>About</h1>
+			<p>Pixilare Media is a group of coders, animators, and influnicers that just want to have fun with what they are doing. We mostly have stuff like Pixel Craft & Pixel Modded as some of the thigns that the Games part works on. You can get info on each individual page when checking out the drop down menu for that part of our group.<br><br>We are working in the background to create some new animated series, and maps/mod packs/resource packs for Minecraft Java Edition.</p>
+		</div>
+		<div id="mainPageGroup2">
+			<div id="mainPageFeaturedProjects" class="group-sections">
+				<h2>Featured Projects</h2>
+				<div id="mainPageFeaturedProjectsList">
+      		<ProjectExternal
+        		link="https://pixelseries.xyz/"
+        		division="studios/modding/minecraft"
+        		projectId="pixel-series"
+        		projectName="Pixel Series"
+      		/>
+      		<Project
+        		division="studios/modding/minecraft/mod-packs"
+        		projectId="pixel-random"
+        		projectName="Pixel Random"
+      		/>
+      		<Project
+        		division="studios/modding/minecraft/resource-packs"
+        		projectId="hollow-pvp"
+        		projectName="Hollow PvP"
+      		/>
+				</div>
+			</div>
+			<div id="mainPageFollowUs">
+				<div class="follow-us group-sections">
+					<h3>Follow us on<br>Twitter</h3>
+					<a href="https://twitter.com/PixilareMedia" target="_blank"><img src="/images/logos/twitter.png" alt="The Twitter Logo."></a>
+					<p>Our Twitter to follow if you want.</p>
+				</div>
+				<div class="follow-us group-sections">
+					<h3>Follow us on<br>Instagram</h3>
+					<a href="https://www.instagram.com/pixilaremedia/" target="_blank"><img src="/images/logos/instagram.png" alt="The Instagram Logo."></a>
+					<p>Our Instagram to follow if you want.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+  #home-page {
+    text-align: center;
+		margin-bottom: 3em;
+		margin-top: 1em;
+  }
+  #home-page > h1 {
+    margin-bottom: 1em;
+  }
+	#mainPageWordLogo {
+		width: 35%;
+		height: auto;
+	}
+	.group-sections {
+		border: 3px;
+		border-color: var(--section-backgound-border);
+		border-style: inset;
+		border-radius: 25px;
+		font-size: large;
+		padding: 10px;
+		margin: 5px;
+		background-color: var(--section-backgound);
+	}
+	#mainPageGroup1 {
+		display: flex;
+		flex-direction: column;
+	}
+	#mainPageGroup2 {
+		display: flex;
+		flex-direction: row;
+	}
+	#mainPageFeaturedProjects {
+		display: flex;
+		flex-direction: column;
+		width: 75%;
+	}
+	#mainPageFeaturedProjectsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14ch, 1fr));
+    gap: 1rem;
+	}
+	#mainPageFollowUs {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	}
+	.follow-us {
+		text-align: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+	.follow-us > a > img {
+		width: 50%;
+		height: auto;
+	}
+</style>

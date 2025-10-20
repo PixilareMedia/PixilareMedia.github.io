@@ -1,0 +1,247 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px
+}
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 500px;
+    background: var(--scrollbar-thumb);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
+
+/* Site color palette */
+:root {
+    --scrollbar-track-dark: hsl(0, 3%, 20%);
+    --scrollbar-track-light: hsl(180, 2%, 80%);
+    --scrollbar-thumb-dark: hsl(0, 1%, 28%);
+    --scrollbar-thumb-light: hsl(180, 1%, 72%);
+    --scrollbar-thumb-hover-dark: hsl(0, 0%, 53%);
+    --scrollbar-thumb-hover-light: hsl(0, 0%, 47%);
+    
+    --background-dark: #181818;
+    --background-light: #e8e8e8;
+
+    --navigation-background-dark: #272727;
+    --navigation-background-light: #e0e0e0;
+    --navigation-background-border-dark: var(--scrollbar-track-dark);
+    --navigation-background-border-light: var(--scrollbar-track-light);
+
+    --footer-background-dark: #0e0e0e;
+    --footer-background-light: #f2f2f2;
+
+    --text-dark: #ffffff;
+    --text-light: #000000;
+
+    --link-hover-dark: var(--accent-colour-dark);
+    --link-hover-light: var(--accent-colour-light);
+    --link-external-hover-dark: var(--primary-colour-light);
+    --link-external-hover-light: var(--primary-colour-dark);
+
+    --image-border-dark: #808080;
+    --image-border-light: #808080;
+
+    --section-backgound-dark: #33333380;
+    --section-backgound-light: #cccccc80;
+    --section-backgound-border-dark: var(--secondary-colour-light);
+    --section-backgound-border-light: var(--secondary-colour-dark);
+
+    --button-project-background-dark: #0099ff00;
+    --button-project-background-light: #ff660000;
+    --button-project-backgound-hover-dark: #545454;
+    --button-project-backgound-hover-light: #ababab;
+    --button-project-border-dark: #808080;
+    --button-project-border-light: #7f7f7f;
+    --button-project-link-mirror-dark: var(--accented-colour-light);
+    --button-project-link-mirror-light: var(--accented-colour-dark);
+    --button-project-link-dark: hsl(180, 100%, 50%);
+    --button-project-link-light: hsl(224, 100%, 50%);
+
+    --team-member-card-background-dark: #33333380;
+    --team-member-card-background-light: #cccccc80;
+    --team-member-card-background-border-dark: var(--secondary-colour-light);
+    --team-member-card-background-border-light: var(--secondary-colour-dark);
+    --team-member-card-avatar-border-dark: var(--secondary-colour-dark);
+    --team-member-card-avatar-border-light: var(--secondary-colour-light);
+    --team-member-card-titles-text-dark: #808080;
+    --team-member-card-titles-text-light: #7f7f7f;
+    --team-member-card-description-text-dark: #a1a1a1;
+    --team-member-card-description-text-light: #5e5e5e;
+    --team-member-card-social-text-dark: #a8a8a8;
+    --team-member-card-social-text-light: #575757;
+
+    --social-link-card-background-dark: hsl(0, 0%, 18%);
+    --social-link-card-background-light: hsl(0, 0%, 82%);
+    --social-link-card-background-border-dark: hsl(0, 0%, 16%);
+    --social-link-card-background-border-light: hsl(0, 0%, 84%);
+    --social-link-card-background-shadow-dark: hsla(0, 0%, 0%, 0.25);
+    --social-link-card-background-shadow-light: hsla(0, 0%, 0%, 0.25);
+    --social-link-card-at-dark: var(--secondary-colour-light);
+    --social-link-card-at-light: var(--secondary-colour-dark);
+
+    --project-card-background-dark: hsl(0, 0%, 18%);
+    --project-card-background-light: hsl(0, 0%, 82%);
+    --project-card-background-border-dark: hsl(0, 0%, 16%);
+    --project-card-background-border-light: hsl(0, 0%, 84%);
+    --project-card-background-shadow-dark: hsla(0, 0%, 0%, 0.25);
+    --project-card-background-shadow-light: hsla(0, 0%, 0%, 0.25);
+    --project-card-poster-dark: hsl(0, 0%, 16%);
+    --project-card-poster-light: hsl(0, 0%, 84%);
+
+    --primary-colour-dark: #420666;
+    --secondary-colour-dark: #214169;
+    --accent-colour-dark: #692142;
+    --accented-colour-dark: #216942;
+
+    --linearPrimarySecondary-dark: linear-gradient(#420666, #214169);
+    --linearPrimaryAccent-dark: linear-gradient(#420666, #692142);
+    --linearSecondaryAccent-dark: linear-gradient(#214169, #692142);
+    --radialPrimarySecondary-dark: radial-gradient(#420666, #214169);
+    --radialPrimaryAccent-dark: radial-gradient(#420666, #692142);
+    --radialSecondaryAccent-dark: radial-gradient(#214169, #692142);
+
+    --primary-colour-light: #d69af9;
+    --secondary-colour-light: #96b7de;
+    --accent-colour-light: #de96b7;
+    --accented-colour-light: #96deb8;
+
+    --linearPrimarySecondary-light: linear-gradient(#d69af9, #96b7de);
+    --linearPrimaryAccent-light: linear-gradient(#d69af9, #de96b7);
+    --linearSecondaryAccent-light: linear-gradient(#96b7de, #de96b7);
+    --radialPrimarySecondary-light: radial-gradient(#d69af9, #96b7de);
+    --radialPrimaryAccent-light: radial-gradient(#d69af9, #de96b7);
+    --radialSecondaryAccent-light: radial-gradient(#96b7de, #de96b7);
+}
+
+/* Semantic color variables for this project */
+:root {
+    --scrollbar-track: var(--scrollbar-track-light);
+    --scrollbar-thumb: var(--scrollbar-thumb-light);
+    --scrollbar-thumb-hover: var(--scrollbar-thumb-hover-light);
+
+    --background: var(--background-light);
+
+    --text: var(--text-light);
+
+    --link-hover: var(--link-hover-light);
+    --link-external-hover: var(--link-external-hover-light);
+
+    --navigation-background: var(--navigation-background-light);
+    --navigation-background-border: var(--navigation-background-border-light);
+
+    --footer-background: var(--footer-background-light);
+
+    --image-border: var(--image-border-light);
+
+    --section-backgound: var(--section-backgound-light);
+    --section-backgound-border: var(--section-backgound-border-light);
+
+    --button-project-background: var(--button-project-background-light);
+    --button-project-backgound-hover: var(--button-project-backgound-hover-light);
+    --button-project-border: var(--button-project-border-light);
+    --button-project-link-mirror: var(--button-project-link-mirror-light);
+    --button-project-link: var(--button-project-link-light);
+
+    --team-member-card-background: var(--team-member-card-background-light);
+    --team-member-card-background-border: var(--team-member-card-background-border-light);
+    --team-member-card-avatar-border: var(--team-member-card-avatar-border-light);
+    --team-member-card-titles-text: var(--team-member-card-titles-text-light);
+    --team-member-card-description-text: var(--team-member-card-description-text-light);
+    --team-member-card-social-text: var(--team-member-card-social-text-light);
+
+    --social-link-card-background: var(--social-link-card-background-light);
+    --social-link-card-background-border: var(--social-link-card-background-border-light);
+    --social-link-card-background-shadow: var(--social-link-card-background-shadow-light);
+    --social-link-card-at: var(--social-link-card-at-light);
+
+    --project-card-background: var(--project-card-background-light);
+    --project-card-background-border: var(--project-card-background-border-light);
+    --project-card-background-shadow: var(--project-card-background-shadow-light);
+    --project-card-poster: var(--project-card-poster-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --scrollbar-track: var(--scrollbar-track-dark);
+        --scrollbar-thumb: var(--scrollbar-thumb-dark);
+        --scrollbar-thumb-hover: var(--scrollbar-thumb-hover-dark);
+
+        --background: var(--background-dark);
+
+        --text: var(--text-dark);
+
+        --link-hover: var(--link-hover-dark);
+        --link-external-hover: var(--link-external-hover-dark);
+
+        --navigation-background: var(--navigation-background-dark);
+        --navigation-background-border: var(--navigation-background-border-dark);
+
+        --footer-background: var(--footer-background-dark);
+
+        --image-border: var(--image-border-dark);
+
+        --section-backgound: var(--section-backgound-dark);
+        --section-backgound-border: var(--section-backgound-border-dark);
+        
+        --button-project-background: var(--button-project-background-dark);
+        --button-project-backgound-hover: var(--button-project-backgound-hover-dark);
+        --button-project-border: var(--button-project-border-dark);
+        --button-project-link-mirror: var(--button-project-link-mirror-dark);
+        --button-project-link: var(--button-project-link-dark);
+
+        --team-member-card-background: var(--team-member-card-background-dark);
+        --team-member-card-background-border: var(--team-member-card-background-border-dark);
+        --team-member-card-avatar-border: var(--team-member-card-avatar-border-dark);
+        --team-member-card-titles-text: var(--team-member-card-titles-text-dark);
+        --team-member-card-description-text: var(--team-member-card-description-text-dark);
+        --team-member-card-social-text: var(--team-member-card-social-text-dark);
+
+        --social-link-card-background: var(--social-link-card-background-dark);
+        --social-link-card-background-border: var(--social-link-card-background-border-dark);
+        --social-link-card-background-shadow: var(--social-link-card-background-shadow-dark);
+        --social-link-card-at: var(--social-link-card-at-dark);
+
+        --project-card-background: var(--project-card-background-dark);
+        --project-card-background-border: var(--project-card-background-border-dark);
+        --project-card-background-shadow: var(--project-card-background-shadow-dark);
+        --project-card-poster: var(--project-card-poster-dark);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--text);
+    background: var(--background);
+    transition:
+            color 0.5s,
+            background-color 0.5s;
+    line-height: 1.6;
+    font-family:
+            Inter,
+            -apple-system,
+            BlinkMacSystemFont,
+            'Segoe UI',
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            'Fira Sans',
+            'Droid Sans',
+            'Helvetica Neue',
+            sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

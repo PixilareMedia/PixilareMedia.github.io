@@ -1,0 +1,22 @@
+---
+export interface Props {
+  downloadLink: string;
+  downloadName: string;
+}
+
+const { downloadLink, downloadName } = Astro.props;
+---
+
+<li>
+  <a class="download-mirror" href=`https://cdn.roebuck.dev/user/pixilare-media/${downloadLink}` title=`The Download Mirror of the ${downloadName} file.`>{downloadName}</a>
+</li>
+
+<style>
+  .download-mirror {
+    text-decoration: none;
+    color: var(--button-project-link-mirror);
+  }
+  .download-mirror:hover {
+    color: var(--link-external-hover);
+  }
+</style>

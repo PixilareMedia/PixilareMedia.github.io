@@ -1,0 +1,138 @@
+---
+import Layout from "../layouts/GenericLayout.astro";
+import Card from "../components/cards/TeamMember.astro";
+---
+
+<Layout description="The entire team behind Pixilare Media." title="Team - Pixilare Media">
+  <div id="team-page">
+    <h1>Pixilare Media's Team</h1>
+    <ul role="list" class="member-grid">
+      <Card
+        name="William"
+        avatar="william.png"
+        title1="CEO of Pixilare Media"
+        title2="President of Pixialre Studios"
+        title3="Principle Programmer"
+        title4=""
+        title5=""
+        description="GOD among GODS."
+        socialAt="@Herobrain_gamer"
+        socialLink="https://www.twitter.com/Herobrain_gamer"
+      />
+      <Card
+        name="Zack"
+        avatar="zackery.png"
+        title1="President of Pixilare Entertainment"
+        title2="Principle Scenic Designer"
+        title3=""
+        title4=""
+        title5=""
+        description="Gives great & horrible ideas."
+        socialAt="@zackman1291"
+        socialLink="https://www.instagram.com/zackman1291/"
+      />
+      <Card
+        name="Sage"
+        avatar="sage.png"
+        title1="President of Talent Management"
+        title2="VP of Pixilare Entertainment"
+        title3="Writter"
+        title4=""
+        title5=""
+        description="NOT responsible for ANYTHING. Very likely on drugs?"
+        socialAt=""
+        socialLink="https://www.instagram.com/"
+      />
+      <Card
+        name="Nathan"
+        avatar="nathan.png"
+        title1="VP of Pixilare Studios"
+        title2="Programmer"
+        title3=""
+        title4=""
+        title5=""
+        description="Knows just enough to screw up."
+        socialAt="@masterzant"
+        socialLink="https://www.instagram.com/masterzant/"
+      />
+      <Card
+        name="Aidan"
+        avatar="aidan.png"
+        title1="Principle Auido Engineer"
+        title2="Artist"
+        title3=""
+        title4=""
+        title5=""
+        description=". . ."
+        socialAt=""
+        socialLink="https://www.instagram.com/childofbaphomet_/"
+      />
+      <Card
+        name="J"
+        avatar="j.png"
+        title1="Principle Artist"
+        title2="Writter"
+        title3=""
+        title4=""
+        title5=""
+        description="Botanically declined."
+        socialAt="@squiggy_cryptid"
+        socialLink="https://www.instagram.com/squiggy_cryptid/"
+      />
+      <Card
+        name="Makayla"
+        avatar="makayla.png"
+        title1="Principle Writter"
+        title2="Artist"
+        title3=""
+        title4=""
+        title5=""
+        description="The local furry."
+        socialAt="@midna_87"
+        socialLink="https://www.instagram.com/midna_87/"
+      />
+      <Card
+        name="Cole"
+        avatar="cole.png"
+        title1="Talent"
+        title2="Artist"
+        title3=""
+        title4=""
+        title5=""
+        description="Has never finished a project."
+        socialAt="@thetrueduality"
+        socialLink="https://www.instagram.com/thetrueduality/"
+      />
+      <Card
+        name="Marquis"
+        avatar="marquis.png"
+        title1="Compliance Officer"
+        title2="Talent"
+        title3=""
+        title4=""
+        title5=""
+        description="Office token pet."
+        socialAt=""
+        socialLink="https://www.instagram.com/"
+      />
+    </ul>
+  </div>
+</Layout>
+
+<style>
+  #team-page {
+    text-align: center;
+		margin-bottom: 3em;
+		margin-top: 1em;
+  }
+  #team-page > h1 {
+    margin-bottom: 1em;
+  }
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(34ch, 1fr));
+    gap: 1rem;
+    padding: 0em;
+    margin-bottom: 2em;
+  }
+</style>

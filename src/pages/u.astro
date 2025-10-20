@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/GenericLayout.astro";
+---
+
+<Layout description="A shortcut page that redirects to different locations." title="Pixilare Media">
+  <div id="shortcuts-page">
+    <h1>This page will change shortly...</h1>
+    <img src="/images/icons/doggo.gif" alt="A doggo 'swimming' gif."/>
+    <p><a href="/">If it does not change click here.</a></p>
+    <div id="spacer"></div>
+  </div>
+</Layout>
+
+<style>
+  #shortcuts-page {
+    color: var(--text);
+    text-align: center;
+  }
+  #shortcuts-page > h1 {
+    font-size: large;
+  }
+  #shortcuts-page > p > a {
+    color: var(--link-hover);
+    text-decoration: none;
+  }
+  #shortcuts-page > p > a:hover {
+    color: var(--link-external-hover);
+  }
+  #spacer {
+    margin-bottom: 10em;
+  }
+</style>
+
+<script>
+  //Run this function once the DOM Content has loaded.
+  document.addEventListener("DOMContentLoaded", anchorCheck);
+
+  //Checking the anchor on the page.
+  function anchorCheck() {
+    //Hash variable.
+    let hash = location.hash;
+    let uuid = hash.replace("#", "");
+    let slug = hash.toLowerCase().replace("#", "");
+
+    //UUID's generated with https://shortunique.id/
+    console.log("UUID Varriable", uuid, "\nSlug Variable", slug);
+
+    //Check to see if there is a hash/anchor on the page.
+    if(!hash) {
+      //If no hash found return to main page.
+      location.replace("/");
+    } else {
+      //If hash is found check against our list of working hashs.
+      if(uuid === "KhZBL" || slug === "team") {
+        location.replace("/team/");
+      }
+      if(uuid === "In8Kv" || slug === "links") {
+        location.replace("/links/");
+      }
+      if(uuid === "ZsgpC" || slug === "jobs") {
+        location.replace("/jobs/");
+      }
+      if(uuid === "ZPE7M" || slug === "projects") {
+        location.replace("/projects/");
+      }
+      if(uuid === "nWVrA" || slug === "privacy-policy") {
+        location.replace("/support/privacy-policy/");
+      }
+      if(uuid === "QJkM2" || slug === "cookie-policy") {
+        location.replace("/support/cookie-policy/");
+      }
+      if(uuid === "2Bfa5" || slug === "terms-of-serivce") {
+        location.replace("/support/terms-of-service/");
+      }
+      if(uuid === "FRuAU" || slug === "usage-guidelines") {
+        location.replace("/support/usage-guidelines/");
+      }
+      if(uuid === "EceME" || slug === "contact-us") {
+        location.replace("/support/contact-us/");
+      }
+      if(uuid === "Xv8KA" || slug === "modding-projects") {
+        location.replace("/studios/modding/projects/");
+      }
+      if(uuid === "4vRjM" || slug === "pixel-series") {
+        location.replace("https://pixelseries.xyz");
+      }
+      if(uuid === "FtTNB" || slug === "modding-mc-pixel-random") {
+        location.replace("/studios/modding/minecraft/mod-packs/pixel-random/");
+      }
+      if(uuid === "6tb5c" || slug === "modding-mc-pixel-ville") {
+        location.replace("/studios/modding/minecraft/mod-packs/pixel-ville/");
+      }
+      if(uuid === "OFxAN" || slug === "modding-mc-hollow-pvp") {
+        location.replace("/studios/modding/minecraft/resource-packs/hollow-pvp/");
+      }
+    }
+  }
+</script>
